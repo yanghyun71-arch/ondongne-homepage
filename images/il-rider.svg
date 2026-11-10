@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="배달 라이더">
+  <circle cx="60" cy="60" r="56" fill="#eef2f8"/>
+  <rect x="70" y="40" width="30" height="26" rx="4" fill="#ff5a1f"/>
+  <path d="M70 50h30" stroke="#fff" stroke-width="3" opacity=".7"/>
+  <path d="M26 82h48l10-14h12l4 14" stroke="#14213d" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 80c2-10 10-14 20-14h20l-4 16z" fill="#2f5bd3"/>
+  <circle cx="34" cy="90" r="11" fill="#14213d"/>
+  <circle cx="34" cy="90" r="5" fill="#cbd5e1"/>
+  <circle cx="92" cy="90" r="11" fill="#14213d"/>
+  <circle cx="92" cy="90" r="5" fill="#cbd5e1"/>
+  <path d="M46 66l6-20h12l2 20z" fill="#2f5bd3"/>
+  <path d="M60 48l14 10" stroke="#f9d4b4" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="56" cy="32" r="13" fill="#f9d4b4"/>
+  <path d="M42 32c0-10 6-17 15-17s15 7 15 15v4H42z" fill="#2f5bd3"/>
+  <path d="M58 28h15v6H58z" fill="#7cc4ff" opacity=".9"/>
+</svg>
