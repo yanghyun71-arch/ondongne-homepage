@@ -9,11 +9,27 @@
   <meta property="og:description" content="구독료 없이 배달팁 무료, 최저가 비교, 온누리·지역사랑상품권 할인까지.">
   <meta property="og:image" content="https://www.ssondongne.kr/images/logo-red.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- ============ 상단 바로가기 (kncsol.kr 과 같은 링크) ============ -->
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <span class="topbar__label hide-sm">파트너 바로가기</span>
+    <nav class="topbar__links" aria-label="파트너 바로가기">
+      <a href="https://www.kncsol.kr/down/index.html" class="tb tb--down" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0-4-4m4 4 4-4M5 17v3h14v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>프로그램 다운로드</a>
+      <a href="https://stmng.kncsol.co.kr/login" class="tb tb--local" target="_blank" rel="noopener">로컬매니저 접속</a>
+      <a href="https://admin.kncsol.co.kr/contents/login/login.php" class="tb tb--delivery" target="_blank" rel="noopener">배달매니저 접속</a>
+      <a href="https://store.kncsol.co.kr/login" class="tb tb--store" target="_blank" rel="noopener">상점주 접속</a>
+      <a href="https://www.kncsol.kr/" class="tb tb--biz" target="_blank" rel="noopener">비즈니스 사이트</a>
+    </nav>
+  </div>
+</div>
 
 <!-- ============ 헤더 ============ -->
 <header class="header" id="top">
@@ -30,7 +46,6 @@
       <a href="#faq">고객지원</a>
     </nav>
     <div class="header__cta">
-      <a href="https://www.kncsol.kr/" class="btn btn--line btn--sm hide-sm" target="_blank" rel="noopener">총판매니저</a>
       <a href="#download" class="btn btn--primary btn--sm">앱 다운로드</a>
     </div>
   </div>
