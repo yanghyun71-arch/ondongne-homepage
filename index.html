@@ -16,22 +16,7 @@
 </head>
 <body>
 
-<!-- ============ 상단 바로가기 (kncsol.kr 과 같은 링크) ============ -->
-<div class="topbar">
-  <div class="wrap topbar__inner">
-    <span class="topbar__label hide-sm">파트너 바로가기</span>
-    <nav class="topbar__links" aria-label="파트너 바로가기">
-      <a href="https://www.kncsol.kr/down/index.html" class="tb tb--down" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0-4-4m4 4 4-4M5 17v3h14v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>프로그램 다운로드</a>
-      <a href="https://stmng.kncsol.co.kr/login" class="tb tb--local" target="_blank" rel="noopener">로컬매니저 접속</a>
-      <a href="https://admin.kncsol.co.kr/contents/login/login.php" class="tb tb--delivery" target="_blank" rel="noopener">배달매니저 접속</a>
-      <a href="https://store.kncsol.co.kr/login" class="tb tb--store" target="_blank" rel="noopener">상점주 접속</a>
-      <a href="https://www.kncsol.kr/" class="tb tb--biz" target="_blank" rel="noopener">비즈니스 사이트</a>
-    </nav>
-  </div>
-</div>
-
-<!-- ============ 헤더 ============ -->
+<!-- ============ 헤더 (대메뉴 + 파트너 바로가기 한 줄) ============ -->
 <header class="header" id="top">
   <div class="wrap header__inner">
     <a href="#top" class="header__logo" aria-label="상생온동네 홈">
@@ -45,9 +30,12 @@
       <a href="#partners">지자체 협력</a>
       <a href="#faq">고객지원</a>
     </nav>
-    <div class="header__cta">
-      <a href="#download" class="btn btn--primary btn--sm">앱 다운로드</a>
-    </div>
+    <nav class="header__cta" aria-label="파트너 바로가기">
+      <a href="https://www.kncsol.kr/down/index.html" class="tb tb--down" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0-4-4m4 4 4-4M5 17v3h14v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="lg">프로그램 </span>다운로드</span></a>
+      <a href="https://stmng.kncsol.co.kr/login" class="tb tb--local" target="_blank" rel="noopener"><span><span class="lg">로컬</span>매니저<span class="lg"> 접속</span></span></a>
+      <a href="https://store.kncsol.co.kr/login" class="tb tb--store" target="_blank" rel="noopener"><span>상점주<span class="lg"> 접속</span></span></a>
+    </nav>
   </div>
 </header>
 
