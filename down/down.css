@@ -147,6 +147,37 @@ svg { width: 1em; height: 1em; flex: none; }
 .store--apk { background: var(--teal); }
 .store--apk:hover { background: var(--brand-dark); }
 
+/* ===== 모바일 앱: 사용자별(매니저·라이더·상점) 구성 ===== */
+.roles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+.roles a {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 18px 20px; border-radius: 16px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow);
+  transition: border-color .2s, transform .2s;
+}
+.roles a:hover { border-color: var(--teal); transform: translateY(-2px); }
+.roles svg { font-size: 1.6rem; color: var(--brand); margin-bottom: 6px; }
+.roles b { color: var(--ink); font-size: 1.05rem; font-weight: 800; }
+.roles small { font-size: .8rem; color: var(--mute); }
+.roles__no { position: absolute; top: 14px; right: 16px; font-size: .78rem; font-weight: 900; color: var(--teal); letter-spacing: .05em; }
+
+.role { margin-top: 40px; scroll-margin-top: 16px; }
+.role__head {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 14px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--brand);
+}
+.role__no {
+  display: grid; place-items: center; flex: none; width: 34px; height: 34px; border-radius: 10px;
+  background: var(--brand); color: #fff; font-size: .85rem; font-weight: 900;
+}
+.role__icon { display: none; }
+.role__head h2 { color: var(--ink); font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; }
+.role__head p { font-size: .88rem; color: var(--mute); }
+
+.apps { display: grid; gap: 10px; }
+.apps .app { grid-template-columns: 56px 1fr auto; padding: 18px 22px; }
+.apps .stores { grid-column: auto; justify-content: flex-end; }
+.apps .store { flex: none; min-width: 168px; }
+
 /* 도움말 */
 .help {
   display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
@@ -188,4 +219,17 @@ svg { width: 1em; height: 1em; flex: none; }
   .row .dl { padding: 0 12px; }
   .row .soon { padding: 8px 10px; }
   .help { padding: 22px 20px; }
+  .roles { gap: 6px; }
+  .roles a { padding: 14px 12px; }
+  .roles svg { font-size: 1.35rem; margin-bottom: 2px; }
+  .roles b { font-size: .88rem; }
+  .roles small { font-size: .72rem; }
+  .roles__no { top: 10px; right: 10px; font-size: .68rem; }
+  .role { margin-top: 32px; }
+  .role__head h2 { font-size: 1.15rem; }
+  .apps .app { grid-template-columns: 52px 1fr; padding: 18px; }
+  .apps .stores { grid-column: 1 / -1; justify-content: stretch; }
+  .apps .store { flex: 1; min-width: 140px; padding: 9px 12px; gap: 8px; }
+  .apps .store span { white-space: nowrap; font-size: .92rem; }
+  .apps .store svg { font-size: 1.3rem; }
 }
