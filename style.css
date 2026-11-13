@@ -89,7 +89,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 }
 .header__inner { display: flex; align-items: center; height: 68px; gap: 24px; }
 .header__logo { flex: none; }
-.header__logo img { width: 96px; }
+.header__logo img {
+  width: 96px;
+  /* 적색 BI(logo-red.png)를 진한 청녹색 #0b3d4a 로 표시 */
+  filter: brightness(0) saturate(100%) invert(18%) sepia(11%) saturate(3130%) hue-rotate(145deg) brightness(99%) contrast(95%);
+}
 .header__nav { display: flex; gap: 2px; flex: 1; min-width: 0; }
 .header__nav a { font-size: 14px; font-weight: 800; color: #5d6f75; padding: 8px 12px; border-radius: 8px; white-space: nowrap; }
 .header__nav a:hover { color: var(--brand); background: var(--brand-soft); }
