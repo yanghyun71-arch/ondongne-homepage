@@ -9,7 +9,7 @@
   --teal: #12868f;
   --teal-soft: #e6f4f5;
   --gold: #f2b13d;
-  --ink: #14262c;
+  --ink: #111111;
   --body: #4a5a60;
   --mute: #8a9a9f;
   --line: #e2eaec;
@@ -114,7 +114,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   font-size: clamp(1.75rem, 3.6vw, 2.6rem);
   line-height: 1.45; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 20px;
 }
-.hero h1 em { font-style: normal; color: var(--brand); }
+.hero h1 em { font-style: normal; color: var(--ink); }
 .hero__lead { font-size: 1.02rem; line-height: 1.75; color: var(--body); margin-bottom: 32px; }
 .hero__stores { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 44px; }
 .hero__stores img { height: 48px; width: auto; }
