@@ -394,6 +394,83 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   .bflow li + li::before { top: 0; left: 50%; transform: translateX(-50%); font-size: 1.1rem; }
 }
 
+/* ===== 소상공인혜택 ===== */
+#merchant { padding-top: 72px; padding-bottom: 88px; }
+.group-title { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px; margin-bottom: 18px; }
+.group-title h3 { padding: 9px 24px; border-radius: 999px; background: var(--navy); color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.15rem; font-weight: 700; }
+.group-title p { color: var(--ink); font-weight: 700; font-size: 1.02rem; }
+.group-title--mt { margin-top: 48px; }
+.bcard__num--sm { font-size: 1rem; }
+
+/* 01 수수료 비교 */
+.fee-cmp { display: grid; grid-template-columns: 1fr 20px 1fr; align-items: stretch; gap: 6px; }
+.fee-cmp__col { display: flex; flex-direction: column; border-radius: 12px; overflow: hidden; border: 1.5px solid var(--navy); background: #fff; }
+.fee-cmp__head { padding: 8px 4px; background: var(--navy); color: #fff; text-align: center; font-weight: 800; font-size: .95rem; }
+.fee-cmp__col ul { padding: 4px 8px; }
+.fee-cmp__col li { display: flex; align-items: center; gap: 8px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: .8rem; color: var(--navy); font-weight: 700; }
+.fee-cmp__col li:last-child { border-bottom: 0; }
+.fee-cmp__col li b { display: block; font-size: .82rem; color: var(--ink); }
+.fee-cmp .logo { display: grid; place-items: center; flex: none; width: 32px; height: 32px; border-radius: 8px; background: #eef1f3; color: var(--mute); font-weight: 800; font-size: .85rem; }
+.fee-cmp__arrow { align-self: center; color: var(--navy); font-size: 1.1rem; text-align: center; }
+.fee-cmp__on { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px 6px; text-align: center; }
+.fee-cmp__on span { color: #d0342c; font-weight: 800; font-size: 1rem; }
+.fee-cmp__on strong { color: #c0282b; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 4.2rem; font-weight: 700; line-height: 1; }
+.fee-cmp__on strong small { font-size: 2rem; }
+.fee-cmp__on svg { width: 100%; max-width: 120px; margin-top: 8px; }
+
+/* 02 QR 고객유치 장면 */
+.qrscene { position: relative; height: 262px; border-radius: 16px; background: linear-gradient(#eef7f9, #fff 80%); overflow: hidden; }
+.qrscene__bubble { position: absolute; left: 6px; top: 8px; z-index: 2; display: grid; place-items: center; width: 92px; height: 70px; border-radius: 46px; background: var(--teal); color: #fff; font-size: .78rem; font-weight: 800; text-align: center; line-height: 1.3; }
+.qrscene__bubble::after { content: ""; position: absolute; left: 50px; bottom: -8px; border: 8px solid transparent; border-top-color: var(--teal); border-bottom: 0; }
+.qrscene__share { position: absolute; right: 8px; top: 12px; padding: 5px 12px; background: var(--navy); color: #fff; font-size: .78rem; font-weight: 800; border-radius: 6px; }
+.qrscene__shop { position: absolute; left: 50%; top: 72px; transform: translateX(-62%); text-align: center; }
+.qrscene__sign { display: inline-block; margin-bottom: -8px; position: relative; z-index: 1; padding: 3px 10px; border-radius: 6px; border: 1.5px solid var(--navy); background: #fff; font-size: .74rem; font-weight: 800; color: var(--navy); }
+.qrscene__shop img { width: 120px; height: 120px; }
+.qrscene__cust { position: absolute; left: 4px; bottom: 6px; width: 70px; height: 70px; }
+.qrscene__others { position: absolute; right: 14px; top: 50px; display: flex; flex-direction: column; gap: 2px; }
+.qrscene__others img { width: 36px; height: 36px; }
+.qrscene__pay { position: absolute; right: 8px; bottom: 8px; display: grid; place-items: center; width: 78px; height: 78px; border-radius: 50%; border: 3px solid var(--navy); background: #fff; color: #c0282b; font-weight: 800; font-size: .85rem; line-height: 1.1; text-align: center; }
+.qrscene__pay b { display: block; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.7rem; }
+
+/* 03 쿠폰 */
+.coupon { display: grid; grid-template-columns: 1fr 74px; align-items: center; gap: 8px; height: 262px; }
+.coupon__phone { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 100%; padding: 22px 10px 16px; border-radius: 26px; border: 6px solid var(--navy); background: #fff; }
+.coupon__phone::before { content: ""; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 40px; height: 5px; border-radius: 4px; background: var(--navy); }
+.coupon__brand { color: var(--navy); font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.3rem; font-weight: 700; }
+.coupon__ticket { display: flex; align-items: center; gap: 8px; width: 112%; padding: 10px 12px; transform: rotate(-6deg); border-radius: 8px; background: var(--teal); color: #fff; box-shadow: 0 8px 16px -6px rgba(11, 61, 74, .5); }
+.coupon__ticket em { flex: 1; font-style: normal; font-weight: 800; font-size: .86rem; line-height: 1.2; }
+.coupon__ticket b { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 6px; background: #fff; color: #c0282b; font-size: 1.6rem; font-weight: 900; }
+.coupon__btn { padding: 7px 16px; border-radius: 999px; background: var(--navy); color: #fff; font-size: .8rem; font-weight: 800; }
+.coupon__to { position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.coupon__plane { position: absolute; top: -40px; right: 4px; width: 34px; height: 34px; }
+.coupon__who { position: relative; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: var(--teal-soft); border: 2px solid var(--teal); }
+.coupon__who::before { content: ""; position: absolute; right: 100%; top: 50%; width: 22px; border-top: 2px dashed var(--navy); }
+.coupon__who i { font-style: normal; font-size: 1.8rem; }
+.coupon__who b { position: absolute; right: -6px; top: -4px; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 5px; background: var(--teal); color: #fff; font-size: .7rem; }
+
+/* 매니저 · 라이더 */
+.pcards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.pcard { display: flex; align-items: center; gap: 18px; }
+.pcard__who { margin: 0; flex: none; width: 130px; text-align: center; font-weight: 800; color: var(--ink); }
+.pcard__who img { width: 120px; height: 120px; margin: 0 auto 6px; }
+.incomes { flex: 1; display: grid; gap: 10px; }
+.incomes li { display: grid; grid-template-columns: 58px 1fr; gap: 12px; align-items: center; padding: 12px; border-radius: 14px; background: var(--bg-tint); border: 1px solid var(--line); font-size: .86rem; color: var(--body); }
+.incomes b { display: block; margin-bottom: 2px; color: var(--ink); font-size: 1rem; font-weight: 800; }
+.incomes__badge { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: var(--navy); color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.5rem; font-weight: 700; }
+.incomes__badge small { font-size: .9rem; }
+.incomes__badge--gold { background: var(--gold); color: #5a3d00; }
+.incomes__badge--icon { background: var(--teal-soft); font-size: 1.8rem; }
+
+@media (max-width: 1100px) {
+  .pcards { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  #merchant { padding-top: 48px; padding-bottom: 56px; }
+  .group-title { flex-direction: column; align-items: flex-start; }
+  .pcard { flex-direction: column; }
+  .fee-cmp__on strong { font-size: 3.4rem; }
+}
+
 /* ===== 상생 구조: 중개앱 vs 직거래앱 ===== */
 .vs { display: grid; gap: 18px; }
 .vs__card { border-radius: 24px; padding: 28px 32px; background: #fff; border: 1px solid var(--line); }
