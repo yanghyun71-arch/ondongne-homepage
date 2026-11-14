@@ -471,6 +471,29 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   .fee-cmp__on strong { font-size: 3.4rem; }
 }
 
+/* ===== 서비스소개 · 지자체 공공앱 ===== */
+#services, #partners { padding-top: 72px; padding-bottom: 88px; }
+.svc2-grid { row-gap: 22px; }
+.svc2 img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-bottom: 1px solid var(--line); }
+.svc2__desc { flex: 1; padding: 16px 20px 0; font-size: .95rem; color: var(--body); text-align: center; }
+.svc2 .bcard__slogan { font-size: 1.02rem; }
+.more-svc { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px 18px; margin-top: 28px; padding: 18px 24px; border-radius: 20px; background: var(--navy); }
+.more-svc b { color: var(--gold); font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.05rem; font-weight: 700; }
+.more-svc ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.more-svc li { padding: 7px 16px; border-radius: 999px; border: 1.5px solid rgba(255, 255, 255, .5); color: #fff; font-size: .9rem; font-weight: 700; }
+.regions-box { padding: 32px 24px 26px; border-radius: 22px; background: #fff; border: 2px solid var(--navy); box-shadow: var(--shadow); }
+.regions-box .regions { margin: 0 auto; }
+.regions-box .regions figcaption { display: inline-block; padding: 4px 14px; border-radius: 999px; background: var(--navy); color: #fff; font-size: .88rem; }
+.pillar2 { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; padding-top: 22px; }
+.pillar2 i { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--teal-soft); font-style: normal; font-size: 1.9rem; }
+.pillar2 p { font-size: .95rem; color: var(--body); }
+#partners .center { margin-top: 32px; }
+@media (max-width: 760px) {
+  #services, #partners { padding-top: 48px; padding-bottom: 56px; }
+  .more-svc { flex-direction: column; }
+  .regions-box { padding: 20px 14px; }
+}
+
 /* ===== 상생 구조: 중개앱 vs 직거래앱 ===== */
 .vs { display: grid; gap: 18px; }
 .vs__card { border-radius: 24px; padding: 28px 32px; background: #fff; border: 1px solid var(--line); }
