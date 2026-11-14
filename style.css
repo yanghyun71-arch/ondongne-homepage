@@ -303,6 +303,97 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .flow li + li::before { content: "→"; color: #7fd3da; margin-right: 16px; }
 .flow li:last-child { color: var(--gold); }
 
+/* ===== 고객혜택 카드 (참고 이미지 스타일) ===== */
+#direct { padding-bottom: 48px; }
+#benefits { padding-top: 56px; padding-bottom: 80px; }
+.bcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.bcard { display: flex; flex-direction: column; overflow: hidden; border-radius: 22px; background: #fff; border: 2px solid var(--navy); box-shadow: var(--shadow); }
+.bcard__head { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 20px; background: var(--navy); color: #fff; }
+.bcard__head h3 { flex: 1; text-align: center; color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.15rem; font-weight: 700; line-height: 1.35; }
+.bcard__num { display: grid; place-items: center; flex: none; width: 42px; height: 42px; border-radius: 50%; border: 2.5px solid #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.3rem; font-weight: 700; }
+.bcard__body { flex: 1; padding: 20px 18px 6px; }
+.bcard__slogan { margin: 12px 14px 14px; padding: 14px 10px; border-radius: 14px; background: #eef4f7; text-align: center; color: #d0342c; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.12rem; font-weight: 700; }
+
+/* 1. 최저가 */
+.menu-hero { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.menu-hero__name { font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; white-space: nowrap; }
+.menu-hero img { width: 46%; max-width: 170px; height: auto; }
+.pill-best { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px 6px 8px; border-radius: 12px; background: linear-gradient(135deg, #4aa3f0, #2f7fe0); color: #fff; font-weight: 800; font-size: .95rem; }
+.pill-best i { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: rgba(255, 255, 255, .3); font-style: normal; font-size: .8rem; }
+.prices li { display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 12px; padding: 9px 10px; border-bottom: 1px dashed var(--line); }
+.prices li:last-child { border-bottom: 0; }
+.prices .logo { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; background: #eef1f3; color: var(--mute); font-weight: 800; font-size: .95rem; }
+.prices .logo--on { background: #e8392f; color: #fff; font-size: .62rem; letter-spacing: -.02em; }
+.prices__name { font-weight: 800; color: var(--ink); }
+.prices strong { font-size: 1.1rem; font-weight: 800; color: var(--body); font-variant-numeric: tabular-nums; }
+.prices .is-best { margin-bottom: 4px; border: 2px solid #f1a9a3; border-radius: 14px; background: #fff4f3; }
+.prices .is-best .prices__name { color: #d0342c; }
+.prices .is-best strong { font-size: 1.4rem; color: #d0342c; }
+.prices__note { margin-top: 4px; text-align: right; font-size: .72rem; color: var(--mute); }
+
+/* 2. 구독료 0원 */
+.zero { text-align: center; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); }
+.zero b { color: #d0342c; font-size: 2rem; }
+.scene { position: relative; height: 170px; margin: 10px 0 0; border-radius: 16px; overflow: hidden; background: linear-gradient(#eaf6fb 0%, #f7fbfc 70%); }
+.scene__cloud { position: absolute; width: 50px; height: 18px; border-radius: 20px; background: #cfe6f2; }
+.scene__cloud::before { content: ""; position: absolute; left: 12px; top: -10px; width: 24px; height: 24px; border-radius: 50%; background: inherit; }
+.scene__cloud--1 { left: 14%; top: 18px; } .scene__cloud--2 { right: 12%; top: 30px; }
+.scene__tree { position: absolute; bottom: 14px; width: 26px; height: 40px; border-radius: 50% 50% 40% 40%; background: #2aa58f; }
+.scene__tree::after { content: ""; position: absolute; left: 11px; bottom: -10px; width: 4px; height: 12px; background: #6b4a2e; }
+.scene__tree--1 { left: 4%; } .scene__tree--2 { left: 13%; height: 30px; background: #38b39a; } .scene__tree--3 { right: 4%; height: 34px; }
+.scene__store { position: absolute; left: 22%; bottom: 6px; width: 130px; height: 130px; }
+.scene__rider { position: absolute; right: 12%; bottom: 8px; width: 96px; height: 96px; }
+.scene__ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: #cfe6dc; }
+.subfee { position: relative; margin-top: 18px; padding-top: 4px; }
+.subfee__label { position: absolute; left: 50%; top: -12px; transform: translateX(-50%); z-index: 1; padding: 4px 16px; border-radius: 999px; background: var(--navy); color: #fff; font-size: .82rem; font-weight: 800; white-space: nowrap; }
+.subfee ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.subfee li { padding: 16px 4px 10px; border-radius: 12px; border: 1.5px solid var(--navy); text-align: center; font-weight: 800; color: var(--navy); font-size: .88rem; }
+.subfee strong { display: block; font-size: 1.05rem; color: var(--ink); text-decoration: line-through; text-decoration-color: rgba(208, 52, 44, .6); font-variant-numeric: tabular-nums; }
+
+/* 3. 상품권 */
+.bi-strip { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px; padding: 8px 10px; border-radius: 14px; border: 1px solid var(--line); background: #fff; }
+.bi-strip img:first-child { width: 118px; height: auto; }
+.bi-strip img:nth-of-type(2) { width: 34px; height: auto; }
+.bi-strip i { font-style: normal; color: var(--mute); font-weight: 700; }
+.bi-strip span { padding-left: 8px; border-left: 1px solid var(--line); font-size: .78rem; font-weight: 800; color: var(--ink); white-space: nowrap; }
+.vouchers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.vch { position: relative; display: flex; flex-direction: column; align-items: center; min-height: 262px; padding: 18px 8px 0; border-radius: 16px; overflow: hidden; text-align: center; background: linear-gradient(170deg, #127a74 0%, #0b4f5e 100%); border: 3px solid #e2c06a; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .15); }
+.vch--alt { background: linear-gradient(170deg, #1a6f86 0%, #0b3d4a 100%); }
+.vch__name { color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.02rem; font-weight: 700; }
+.vch__rate { margin-top: 6px; color: #ffd75a; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 3.4rem; font-weight: 700; line-height: 1; text-shadow: 0 3px 0 rgba(0, 0, 0, .2); }
+.vch__rate small { font-size: 1.8rem; }
+.vch__rate--sm { font-size: 1.9rem; margin-top: 18px; }
+.vch__rate--sm small { font-size: 1.3rem; }
+.vch__off { margin-top: 6px; color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.35rem; font-weight: 700; }
+.vch__cond { margin-top: 8px; padding: 3px 10px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--navy); font-size: .72rem; font-weight: 800; }
+.vch__bi { margin-top: 8px; width: 40px; height: auto; border-radius: 9px; box-shadow: 0 4px 10px rgba(0, 0, 0, .25); }
+.vch__town { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: auto; opacity: .95; }
+
+/* 하단 흐름 띠 */
+.bflow { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 0; margin-top: 28px; padding: 18px 24px; border-radius: 20px; background: var(--navy); color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.12rem; font-weight: 700; }
+.bflow li { display: flex; align-items: center; gap: 12px; padding: 0 10px; }
+.bflow li + li::before { content: "➜"; margin-right: 18px; font-size: 1.4rem; color: #fff; }
+.bflow svg { width: 34px; height: 34px; fill: #fff; flex: none; }
+.bflow li:last-child { color: var(--gold); }
+.bflow li:last-child svg { fill: var(--gold); color: var(--gold); }
+
+@media (max-width: 1100px) {
+  .bcards { grid-template-columns: 1fr 1fr; }
+  .bcards .bcard:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+  #direct { padding-bottom: 32px; }
+  #benefits { padding-top: 40px; padding-bottom: 56px; }
+  .bcards { grid-template-columns: 1fr; }
+  .bcard__head { min-height: 64px; }
+  .scene__store { left: 12%; }
+  .bflow { flex-direction: column; font-size: 1rem; }
+  .bflow li + li::before { content: "↓"; margin-right: 0; position: absolute; }
+  .bflow li { position: relative; flex-direction: column; gap: 6px; padding-top: 0; }
+  .bflow li + li { padding-top: 26px; }
+  .bflow li + li::before { top: 0; left: 50%; transform: translateX(-50%); font-size: 1.1rem; }
+}
+
 /* ===== 상생 구조: 중개앱 vs 직거래앱 ===== */
 .vs { display: grid; gap: 18px; }
 .vs__card { border-radius: 24px; padding: 28px 32px; background: #fff; border: 1px solid var(--line); }

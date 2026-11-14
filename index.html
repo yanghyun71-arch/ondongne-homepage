@@ -281,64 +281,88 @@
         온누리상품권으로 결제하면 7% 추가 할인까지 받아, 만족한 고객이 단골 고객으로 자리 잡습니다.</p>
     </header>
 
-    <div class="benefits">
+    <div class="bcards">
       <!-- 1. 최저가 비교 -->
-      <article class="benefit">
-        <span class="benefit__num">01</span>
-        <h3>배달앱별 최저가 비교</h3>
-        <p class="benefit__desc">한눈에 비교하고 더 저렴하게 주문</p>
-        <div class="compare">
-          <p class="compare__menu">갈릭반 핫양념반 <span class="badge">예시</span></p>
-          <ul>
-            <li class="is-best"><span>상생온동네</span><strong>17,000원</strong></li>
-            <li><span>배민</span><strong>19,000원</strong></li>
-            <li><span>쿠팡이츠</span><strong>19,000원</strong></li>
-            <li><span>요기요</span><strong>19,000원</strong></li>
+      <article class="bcard">
+        <header class="bcard__head"><span class="bcard__num">1</span><h3>배달앱별 최저가 비교</h3></header>
+        <div class="bcard__body">
+          <div class="menu-hero">
+            <div>
+              <p class="menu-hero__name">갈릭반 핫양념반</p>
+              <span class="pill-best"><i>✓</i>최저가</span>
+            </div>
+            <img src="images/menu-chicken.svg" alt="" width="170" height="108">
+          </div>
+          <ul class="prices">
+            <li class="is-best"><span class="logo logo--on">온동네</span><span class="prices__name">온동네</span><strong>17,000원</strong></li>
+            <li><span class="logo">배</span><span class="prices__name">배민</span><strong>19,000원</strong></li>
+            <li><span class="logo">쿠</span><span class="prices__name">쿠팡이츠</span><strong>19,000원</strong></li>
+            <li><span class="logo">요</span><span class="prices__name">요기요</span><strong>19,000원</strong></li>
           </ul>
+          <p class="prices__note">* 가격은 예시입니다</p>
         </div>
+        <p class="bcard__slogan">한눈에 비교하고 더 저렴하게 주문</p>
       </article>
 
       <!-- 2. 구독료 0원 -->
-      <article class="benefit">
-        <span class="benefit__num">02</span>
-        <h3>조건 없는 배달팁 무료</h3>
-        <p class="benefit__desc">구독료 없이 반경 2km 배달팁 무료</p>
-        <div class="sub">
-          <p class="sub__hero">구독료 <strong>0원</strong></p>
-          <p class="sub__label">타 배달앱 월 구독료</p>
-          <ul class="sub__list">
-            <li><span>배민</span><strong>3,990원</strong></li>
-            <li><span>쿠팡이츠</span><strong>7,890원</strong></li>
-            <li><span>요기요</span><strong>2,900원</strong></li>
-          </ul>
+      <article class="bcard">
+        <header class="bcard__head"><span class="bcard__num">2</span><h3>조건 없는 배달팁 무료</h3></header>
+        <div class="bcard__body">
+          <p class="zero">온동네 구독료 <b>0원</b></p>
+          <div class="scene" aria-hidden="true">
+            <span class="scene__cloud scene__cloud--1"></span><span class="scene__cloud scene__cloud--2"></span>
+            <span class="scene__tree scene__tree--1"></span><span class="scene__tree scene__tree--2"></span><span class="scene__tree scene__tree--3"></span>
+            <img class="scene__store" src="images/ch-store.svg" alt="" width="130" height="130">
+            <img class="scene__rider" src="images/ch-rider.svg" alt="" width="96" height="96">
+            <span class="scene__ground"></span>
+          </div>
+          <div class="subfee">
+            <p class="subfee__label">타 배달앱 월 구독료</p>
+            <ul>
+              <li><span>배민</span><strong>3,990원</strong></li>
+              <li><span>쿠팡이츠</span><strong>7,890원</strong></li>
+              <li><span>요기요</span><strong>2,900원</strong></li>
+            </ul>
+          </div>
         </div>
+        <p class="bcard__slogan">구독료 없이 배달팁 무료</p>
       </article>
 
       <!-- 3. 상품권 할인 -->
-      <article class="benefit">
-        <span class="benefit__num">03</span>
-        <h3>상품권 결제 할인</h3>
-        <p class="benefit__desc">상생온동네 앱에서 간편하게 결제</p>
-        <div class="voucher">
-          <div class="voucher__item">
-            <p>온누리상품권</p>
-            <strong>7<small>%</small></strong>
-            <span>할인</span>
+      <article class="bcard">
+        <header class="bcard__head"><span class="bcard__num">3</span><h3>온누리상품권 · 지역사랑상품권 할인</h3></header>
+        <div class="bcard__body">
+          <div class="bi-strip">
+            <img src="images/bi-semas.png" alt="소상공인시장진흥공단" width="128" height="33">
+            <i>×</i>
+            <img src="images/bi-onnuri.png" alt="디지털온누리상품권" width="38" height="37">
+            <span>공식 제휴앱</span>
           </div>
-          <div class="voucher__item voucher__item--alt">
-            <p>지역사랑상품권</p>
-            <strong>10~15<small>%</small></strong>
-            <span>할인</span>
+          <div class="vouchers">
+            <div class="vch">
+              <p class="vch__name">온누리상품권</p>
+              <strong class="vch__rate">7<small>%</small></strong>
+              <span class="vch__off">할인</span>
+              <img class="vch__bi" src="images/bi-onnuri.png" alt="디지털온누리" width="40" height="39">
+              <svg class="vch__town" viewBox="0 0 160 60" aria-hidden="true"><path d="M30 26h100l-10-10H40z" fill="#f2b13d"/><path d="M38 26h84v8H38z" fill="#0b3d4a"/><path d="M46 34h8v26h-8zM106 34h8v26h-8zM70 38h20v22H70z" fill="#0b3d4a"/><path d="M0 44l12-10 12 10v16H0zM136 44l12-10 12 10v16h-24z" fill="#1d8f8f"/><circle cx="20" cy="28" r="10" fill="#2aa58f"/><circle cx="142" cy="26" r="11" fill="#2aa58f"/></svg>
+            </div>
+            <div class="vch vch--alt">
+              <p class="vch__name">지역사랑상품권</p>
+              <strong class="vch__rate vch__rate--sm">10~15<small>%</small></strong>
+              <span class="vch__off">할인</span>
+              <span class="vch__cond">공공앱 협약 시 가능</span>
+              <svg class="vch__town" viewBox="0 0 160 60" aria-hidden="true"><path d="M10 30h34v30H10zM52 20h40v40H52zM100 34h30v26h-30z" fill="#0b3d4a"/><path d="M6 30l21-12 21 12zM48 20l24-12 24 12zM96 34l19-10 19 10z" fill="#f2b13d"/><path d="M60 28h8v8h-8zM76 28h8v8h-8zM60 42h8v8h-8zM76 42h8v8h-8z" fill="#7fd3da"/><circle cx="146" cy="40" r="11" fill="#2aa58f"/></svg>
+            </div>
           </div>
         </div>
-        <p class="note">* 지역사랑상품권 할인은 공공앱 협약 지역에 한함</p>
+        <p class="bcard__slogan">온동네 앱에서 간편하게 결제</p>
       </article>
     </div>
 
-    <ol class="flow">
-      <li>최저가 비교 + 무료배달 + 상품권 할인</li>
-      <li>고객 만족</li>
-      <li>재이용률 상승</li>
+    <ol class="bflow">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="9" cy="6" rx="6" ry="2.5"/><path d="M3 6v3c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V6c0 1.4-2.7 2.5-6 2.5S3 7.4 3 6zm0 5v3c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-3c0 1.4-2.7 2.5-6 2.5S3 12.4 3 11zm0 5v2.5C3 19.9 5.7 21 9 21s6-1.1 6-2.5V16c0 1.4-2.7 2.5-6 2.5S3 17.4 3 16z"/><ellipse cx="17" cy="11" rx="4.5" ry="2"/><path d="M12.5 11v7c0 1.1 2 2 4.5 2s4.5-.9 4.5-2v-7c0 1.1-2 2-4.5 2s-4.5-.9-4.5-2z"/></svg>최저가 비교 + 무료배달 + 상품권 할인</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 20c.5-4 3.3-6.5 7-6.5s6.5 2.5 7 6.5z"/><circle cx="4.5" cy="9" r="2.5"/><circle cx="19.5" cy="9" r="2.5"/><path d="M0 18c.3-2.7 1.9-4.4 4.2-4.6-.8 1.3-1.4 2.8-1.6 4.6zM24 18c-.3-2.7-1.9-4.4-4.2-4.6.8 1.3 1.4 2.8 1.6 4.6z"/></svg>고객 만족</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h3v-6H3zm5 0h3v-9H8zm5 0h3v-7h-3zm5 0h3V8h-3z"/><path d="M3 11l6-5 4 3 7-6M15 3h5v5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>재이용률 상승</li>
     </ol>
   </div>
 </section>
