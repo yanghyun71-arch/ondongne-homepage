@@ -135,7 +135,7 @@
 
     <!-- ① 현재: 독점적 중개앱 서비스 구조 -->
     <article class="st st--old">
-      <header class="st__head"><span class="st__chip st__chip--bad">현재</span><h3>독점적 중개앱 서비스 구조</h3></header>
+      <header class="st__head"><span class="st__chip">현재</span><h3>독점형 중개앱 서비스 구조</h3><p>중개앱이 고객과 서비스 제공자 사이를 막고 수수료와 고객정보를 가져갑니다</p></header>
       <div class="old">
         <figure class="ch"><img src="images/ch-customer.svg" alt="" width="112" height="112"><figcaption>고객</figcaption></figure>
         <div class="arr">
@@ -161,11 +161,58 @@
       </ul>
     </article>
 
-    <div class="st__switch"><span>중개앱 제거</span><b>→</b><span>서비스 제공자가 운영주체가 되는 직거래 공유앱</span></div>
+    <!-- 전환: 중개앱 제거 → 서비스 제공자가 운영주체가 되는 직거래 공유앱 -->
+    <div class="shift">
+      <div class="shift__from">
+        <div class="shift__broker">
+          <img src="images/ch-broker.svg" alt="중개앱" width="170" height="170">
+          <span class="shift__x" aria-hidden="true"></span>
+        </div>
+        <p><b>중개앱 제거</b>고객정보 독점 · 높은 수수료 · 광고비</p>
+      </div>
+      <div class="shift__arrow" aria-hidden="true">
+        <svg viewBox="0 0 120 48"><path d="M4 24h92" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><path d="M84 6l30 18-30 18z" fill="currentColor"/></svg>
+      </div>
+      <div class="shift__to">
+        <span class="shift__tag">대안</span>
+        <strong>서비스 제공자가 <em>운영주체</em>가 되는 <br>직거래 공유앱</strong>
+        <div class="shift__trio">
+          <figure><img src="images/ch-store.svg" alt="" width="68" height="68"><figcaption>상점</figcaption></figure>
+          <figure><img src="images/ch-manager.svg" alt="" width="68" height="68"><figcaption>매니저</figcaption></figure>
+          <figure><img src="images/ch-rider.svg" alt="" width="68" height="68"><figcaption>배송기사</figcaption></figure>
+        </div>
+        <p>상점 · 매니저 · 배송기사가 고객을 직접 유치하고, 그 성과를 고객공유수수료로 함께 나눕니다.</p>
+      </div>
+    </div>
 
-    <!-- ② 대안: 온동네 공유형 직거래 서비스 구조 -->
+    <!-- ② 대안: 직거래 공유형 서비스 구조 (현재 구조와 같은 형태) -->
     <article class="st st--new">
-      <header class="st__head"><span class="st__chip">대안</span><h3>온동네 공유형 직거래 서비스 구조</h3></header>
+      <header class="st__head"><span class="st__chip">대안</span><h3>직거래 공유형 서비스 구조</h3><p>플랫폼은 거래 환경만 제공하고, 고객과 서비스 제공자가 직접 거래합니다</p></header>
+      <div class="old flow2">
+        <figure class="ch"><img src="images/ch-customer.svg" alt="" width="112" height="112"><figcaption>고객</figcaption></figure>
+        <div class="arr">
+          <span class="arr__teal">주문 · 결제 (직거래)</span><i class="ar ar--r ar--teal"></i>
+          <i class="ar ar--l ar--gold"></i><span class="arr__gold arr__rev">QR로 고객 직접 유치</span>
+        </div>
+        <div class="team team--teal">
+          <p class="team__label">서비스 제공자 <em>운영주체</em></p>
+          <figure class="ch ch--sm"><img src="images/ch-store.svg" alt="" width="72" height="72"><figcaption>상점</figcaption></figure>
+          <figure class="ch ch--sm"><img src="images/ch-manager.svg" alt="" width="72" height="72"><figcaption>매니저</figcaption></figure>
+          <figure class="ch ch--sm"><img src="images/ch-rider.svg" alt="" width="72" height="72"><figcaption>배송기사</figcaption></figure>
+        </div>
+        <div class="arr">
+          <span>중개수수료 2%</span><i class="ar ar--r ar--navy"></i>
+          <i class="ar ar--l ar--gold"></i><span class="arr__gold arr__rev">고객공유수수료 2% 지속 정산</span>
+        </div>
+        <figure class="ch"><img src="images/ch-platform.svg" alt="" width="120" height="120"><figcaption>온동네 플랫폼<small>거래 환경만 제공</small></figcaption></figure>
+      </div>
+      <ul class="problems problems--good">
+        <li><b>중개수수료 2%</b>플랫폼사 1% + 로컬매니저 1%, 광고비 경쟁 없음</li>
+        <li><b>고객공유수수료 2%</b>고객을 유치한 서비스 제공자에게 지속 정산</li>
+        <li><b>서비스 제공자가 운영주체</b>내가 유치한 고객과 단골을 직접 관리</li>
+      </ul>
+
+      <h4 class="st__sub">판매상점 수수료 정산 구조</h4>
       <div class="st__body">
         <div class="map" role="img" aria-label="고객은 서비스 제공자가 QR로 직접 유치하고, 판매상점은 플랫폼에 중개수수료 2%와 고객공유수수료 2%를 각각 내며, 플랫폼은 서비스 제공자에게 고객공유수수료 2%, 매니저에게 관리수수료 1%, 배송기사에게 배달료를 지급합니다">
           <figure class="ch m-cust"><img src="images/ch-customer.svg" alt="" width="104" height="104"><figcaption>고객<small>서비스 제공자 소속 QR고객</small></figcaption></figure>

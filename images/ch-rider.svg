@@ -1,41 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="배송기사">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="배송기사(라이더)">
   <circle cx="80" cy="80" r="78" fill="#e6f4f5"/>
   <!-- 뒤 스쿠터 -->
   <g opacity=".9">
-    <path d="M112 118h26l6-10" stroke="#0b3d4a" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M110 120c0-10 6-16 16-16h12l4 16z" fill="#7fd3da"/>
-    <circle cx="116" cy="132" r="9" fill="#0b3d4a"/><circle cx="116" cy="132" r="3.5" fill="#cfe3e6"/>
-    <circle cx="146" cy="132" r="9" fill="#0b3d4a"/><circle cx="146" cy="132" r="3.5" fill="#cfe3e6"/>
-    <path d="M144 108l-4-14h6" stroke="#0b3d4a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <rect x="118" y="88" width="30" height="24" rx="4" fill="#0e6b7d"/>
+    <rect x="124" y="94" width="18" height="4" rx="2" fill="#7fd3da"/>
+    <path d="M112 120c0-8 6-12 14-12h14l6 12z" fill="#7fd3da"/>
+    <circle cx="120" cy="132" r="9" fill="#0b3d4a"/><circle cx="120" cy="132" r="3.5" fill="#cfe3e6"/>
+    <circle cx="148" cy="132" r="9" fill="#0b3d4a"/><circle cx="148" cy="132" r="3.5" fill="#cfe3e6"/>
   </g>
-  <!-- 몸 (유니폼) -->
-  <path d="M26 160c2-28 18-44 46-44s44 16 46 44z" fill="#12868f"/>
-  <path d="M60 116l12 14 12-14z" fill="#e6f4f5"/>
-  <rect x="40" y="132" width="20" height="8" rx="3" fill="#f2b13d"/>
-  <rect x="63" y="102" width="18" height="16" rx="7" fill="#f6c6a5"/>
-  <!-- 머리 + 모자 -->
-  <circle cx="72" cy="74" r="34" fill="#ffdcc2"/>
-  <circle cx="38" cy="78" r="7" fill="#f9cfb0"/>
-  <path d="M40 66c0-22 14-36 32-36s32 14 32 36z" fill="#0e6b7d"/>
-  <path d="M72 66h44c4 0 4 8 0 8H70z" fill="#0b3d4a"/>
-  <circle cx="72" cy="44" r="7" fill="#f2b13d"/>
-  <path d="M44 72c2 6 4 10 6 12" stroke="#2b2a33" stroke-width="5" stroke-linecap="round"/>
+  <!-- 셔츠 -->
+  <path d="M24 160c2-28 20-44 56-44s54 16 56 44z" fill="#12868f"/>
+  <!-- 안전 조끼 -->
+  <path d="M30 160c1-24 12-38 34-43l10 43z" fill="#c9e63a"/>
+  <path d="M130 160c-1-24-12-38-34-43l-10 43z" fill="#c9e63a"/>
+  <path d="M33 140h37l2 6H32zM31 152h40l1 6H30zM127 140H90l-2 6h40zM129 152H89l-1 6h42z" fill="#eef4f5"/>
+  <path d="M64 117l10 43M96 117l-10 43" stroke="#9db52a" stroke-width="2"/>
+  <!-- 목 -->
+  <rect x="71" y="102" width="18" height="16" rx="7" fill="#f6c6a5"/>
   <!-- 얼굴 -->
-  <ellipse cx="64" cy="84" rx="5" ry="6" fill="#2b2a33"/>
-  <ellipse cx="88" cy="84" rx="5" ry="6" fill="#2b2a33"/>
-  <circle cx="65.8" cy="81.5" r="1.8" fill="#fff"/>
-  <circle cx="89.8" cy="81.5" r="1.8" fill="#fff"/>
-  <ellipse cx="55" cy="95" rx="6" ry="3.6" fill="#ff8f8f" opacity=".5"/>
-  <ellipse cx="97" cy="95" rx="6" ry="3.6" fill="#ff8f8f" opacity=".5"/>
-  <path d="M68 96q8 9 16 0z" fill="#d9534f"/>
-  <!-- 택배 상자 -->
-  <g transform="rotate(-6 74 136)">
-    <rect x="50" y="118" width="50" height="38" rx="4" fill="#e3b06a"/>
-    <path d="M50 118l8-8h34l8 8z" fill="#f0c88a"/>
-    <rect x="70" y="110" width="10" height="46" fill="#c58d42" opacity=".6"/>
-    <rect x="56" y="134" width="14" height="10" rx="1.5" fill="#fff"/>
-    <path d="M58 137h10M58 140h7" stroke="#0e6b7d" stroke-width="1.5"/>
+  <circle cx="80" cy="78" r="32" fill="#ffdcc2"/>
+  <!-- 헬멧 -->
+  <path d="M44 78c0-26 16-44 36-44s36 18 36 44h-8c-5-9-15-14-28-14s-23 5-28 14z" fill="#0e6b7d"/>
+  <path d="M52 60c8-8 18-11 28-11s20 3 28 11l-3 5c-7-5-15-7-25-7s-18 2-25 7z" fill="#9fdde3"/>
+  <path d="M68 38c4-2 8-3 12-3s8 1 12 3l-2 6c-3-1-6-2-10-2s-7 1-10 2z" fill="#f2b13d"/>
+  <rect x="38" y="70" width="12" height="20" rx="6" fill="#0b3d4a"/>
+  <rect x="110" y="70" width="12" height="20" rx="6" fill="#0b3d4a"/>
+  <path d="M46 88q6 22 34 22t34-22" stroke="#0b3d4a" stroke-width="2.5" fill="none"/>
+  <!-- 눈 · 입 -->
+  <ellipse cx="68" cy="84" rx="4.6" ry="5.6" fill="#2b2a33"/>
+  <ellipse cx="92" cy="84" rx="4.6" ry="5.6" fill="#2b2a33"/>
+  <circle cx="69.6" cy="81.6" r="1.7" fill="#fff"/>
+  <circle cx="93.6" cy="81.6" r="1.7" fill="#fff"/>
+  <ellipse cx="59" cy="94" rx="5.5" ry="3.3" fill="#ff8f8f" opacity=".5"/>
+  <ellipse cx="101" cy="94" rx="5.5" ry="3.3" fill="#ff8f8f" opacity=".5"/>
+  <path d="M73 95q7 8 14 0z" fill="#d9534f"/>
+  <!-- 엄지척 장갑 -->
+  <g transform="translate(26 118)">
+    <rect x="0" y="8" width="16" height="16" rx="5" fill="#0b3d4a"/>
+    <rect x="4" y="-4" width="7" height="16" rx="3.5" fill="#0b3d4a"/>
   </g>
-  <circle cx="50" cy="140" r="7" fill="#ffdcc2"/>
-  <circle cx="100" cy="134" r="7" fill="#ffdcc2"/>
 </svg>
