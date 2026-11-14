@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="온동네 플랫폼사">
+  <circle cx="80" cy="80" r="78" fill="#0b3d4a"/>
+  <!-- 구름 -->
+  <path d="M46 104a20 20 0 0 1 2-40 28 28 0 0 1 52-8 22 22 0 0 1 14 44z" fill="#fff"/>
+  <!-- 서버 -->
+  <rect x="60" y="62" width="40" height="13" rx="4" fill="#12868f"/>
+  <rect x="60" y="78" width="40" height="13" rx="4" fill="#12868f"/>
+  <rect x="60" y="94" width="40" height="13" rx="4" fill="#0e6b7d"/>
+  <circle cx="68" cy="68.5" r="2.2" fill="#7fd3da"/><circle cx="68" cy="84.5" r="2.2" fill="#7fd3da"/><circle cx="68" cy="100.5" r="2.2" fill="#f2b13d"/>
+  <path d="M76 68.5h18M76 84.5h18M76 100.5h18" stroke="#bfe8f0" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 연결 점 -->
+  <circle cx="30" cy="124" r="5" fill="#7fd3da"/><circle cx="130" cy="124" r="5" fill="#7fd3da"/><circle cx="80" cy="136" r="5" fill="#f2b13d"/>
+  <path d="M34 122l24-10M126 122l-24-10M80 131v-18" stroke="#7fd3da" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

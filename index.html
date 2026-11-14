@@ -147,54 +147,82 @@
       <p>고객과 서비스 제공자(상점·매니저·배송) 사이의 중개앱을 없애고, 서로 직접 거래하는 플랫폼을 제공합니다.</p>
     </header>
 
-    <div class="vs">
-      <!-- 기존 중개앱 -->
-      <article class="vs__card vs__card--old">
-        <header class="vs__head"><span class="vs__chip">기존 방식</span><h3>중개앱 플랫폼이 가운데에서 독점</h3></header>
-        <div class="vs__flow">
-          <figure class="who"><img src="images/il-customer.svg" alt="" width="96" height="96"><figcaption>고객</figcaption></figure>
-          <div class="link"><span>주문·결제 중개</span><i class="ln ln--gray"></i></div>
-          <figure class="who who--mid"><img src="images/il-platform.svg" alt="" width="96" height="96"><figcaption>중개앱 플랫폼</figcaption></figure>
-          <div class="link"><span>주문 전달</span><i class="ln ln--gray"></i><span class="link__back">수수료·광고비 → 플랫폼 수익</span><i class="ln ln--red ln--back"></i></div>
-          <div class="group group--gray">
-            <figure class="who who--sm"><img src="images/il-store.svg" alt="" width="64" height="64"><figcaption>상점</figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-manager.svg" alt="" width="64" height="64"><figcaption>매니저</figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-rider.svg" alt="" width="64" height="64"><figcaption>라이더</figcaption></figure>
-          </div>
+    <!-- ① 현재: 독점적 중개앱 서비스 구조 -->
+    <article class="st st--old">
+      <header class="st__head"><span class="st__chip st__chip--bad">현재</span><h3>독점적 중개앱 서비스 구조</h3></header>
+      <div class="old">
+        <figure class="ch"><img src="images/ch-customer.svg" alt="" width="112" height="112"><figcaption>고객</figcaption></figure>
+        <div class="arr">
+          <span>주문 · 결제</span><i class="ar ar--r"></i>
+          <i class="ar ar--l ar--red"></i><span class="arr__bad">고객정보 독점</span>
         </div>
-        <ul class="problems">
-          <li><b>높은 수수료</b>매출의 상당 부분이 중개수수료로</li>
-          <li><b>광고비 부담</b>노출 경쟁을 위한 광고비 지출</li>
-          <li><b>독점적 불공정행위</b>플랫폼이 정하는 조건을 따를 수밖에</li>
-        </ul>
-      </article>
-
-      <div class="vs__switch"><span>중개앱</span><b>→</b><span>중개앱을 제거하고 직거래로</span></div>
-
-      <!-- 상생온동네 직거래 -->
-      <article class="vs__card vs__card--new">
-        <header class="vs__head"><span class="vs__chip vs__chip--brand">상생온동네</span><h3>고객 ↔ 서비스 제공자 직거래</h3></header>
-        <div class="vs__flow">
-          <figure class="who"><img src="images/il-customer.svg" alt="" width="96" height="96"><figcaption>고객</figcaption></figure>
-          <div class="link link--wide">
-            <span>직접 주문·거래</span><i class="ln ln--teal"></i>
-            <span>상품·배송·이동 서비스</span><i class="ln ln--teal ln--back"></i>
-            <span class="link__good">수수료 절감분 → 가격·할인 혜택</span><i class="ln ln--brand ln--back"></i>
-          </div>
-          <div class="group group--teal">
-            <p class="group__label">서비스 제공자</p>
-            <figure class="who who--sm"><img src="images/il-store.svg" alt="" width="64" height="64"><figcaption>상점</figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-manager.svg" alt="" width="64" height="64"><figcaption>매니저</figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-rider.svg" alt="" width="64" height="64"><figcaption>라이더</figcaption></figure>
-            <figure class="who who--sm who--emoji"><i>📦</i><figcaption>택배</figcaption></figure>
-            <figure class="who who--sm who--emoji"><i>🚕</i><figcaption>택시기사</figcaption></figure>
-            <figure class="who who--sm who--emoji"><i>🚗</i><figcaption>대리기사</figcaption></figure>
-            <p class="group__foot">직접 고객 유치 · 고객 공유 · 지역 공동운영</p>
-          </div>
+        <figure class="ch ch--broker"><img src="images/ch-broker.svg" alt="" width="132" height="132"><figcaption>중개앱 플랫폼</figcaption></figure>
+        <div class="arr">
+          <span>주문 전달</span><i class="ar ar--r"></i>
+          <i class="ar ar--l ar--red"></i><span class="arr__bad">높은 수수료 · 광고비</span>
         </div>
-        <p class="vs__support">플랫폼사 지원 · 앱 개발·운영 · 주문·결제 지원 · 고객공유수수료 정산</p>
-      </article>
-    </div>
+        <div class="team team--gray">
+          <p class="team__label">서비스 제공자</p>
+          <figure class="ch ch--sm"><img src="images/ch-store.svg" alt="" width="72" height="72"><figcaption>상점</figcaption></figure>
+          <figure class="ch ch--sm"><img src="images/ch-manager.svg" alt="" width="72" height="72"><figcaption>매니저</figcaption></figure>
+          <figure class="ch ch--sm"><img src="images/ch-rider.svg" alt="" width="72" height="72"><figcaption>배송기사</figcaption></figure>
+        </div>
+      </div>
+      <ul class="problems">
+        <li><b>높은 수수료</b>매출의 상당 부분이 중개수수료로</li>
+        <li><b>광고비 부담</b>노출 경쟁을 위한 광고비 지출</li>
+        <li><b>독점적 횡포</b>플랫폼이 정한 조건을 따를 수밖에</li>
+      </ul>
+    </article>
+
+    <div class="st__switch"><span>중개앱 제거</span><b>→</b><span>서비스 제공자가 운영주체가 되는 직거래 공유앱</span></div>
+
+    <!-- ② 대안: 온동네 공유형 직거래 서비스 구조 -->
+    <article class="st st--new">
+      <header class="st__head"><span class="st__chip">대안</span><h3>온동네 공유형 직거래 서비스 구조</h3></header>
+      <div class="st__body">
+        <div class="map" role="img" aria-label="고객은 서비스 제공자가 QR로 직접 유치하고, 판매상점은 플랫폼에 수수료 4%(고객공유 2%, 중개 2%)를 내며, 플랫폼은 서비스 제공자에게 고객공유수수료 2%, 매니저에게 관리수수료 1%, 배송기사에게 배달료를 지급합니다">
+          <figure class="ch m-cust"><img src="images/ch-customer.svg" alt="" width="104" height="104"><figcaption>고객<small>서비스 제공자 소속 QR고객</small></figcaption></figure>
+          <div class="marr m-a1"><span>QR로 고객 유치</span><i class="ar ar--r ar--teal"></i></div>
+          <div class="ch m-part">
+            <div class="trio"><img src="images/ch-store.svg" alt="" width="56" height="56"><img src="images/ch-manager.svg" alt="" width="56" height="56"><img src="images/ch-rider.svg" alt="" width="56" height="56"></div>
+            <p class="m-name">서비스 제공자<small>상점 · 매니저 · 배송기사</small></p>
+          </div>
+          <div class="marr m-a2"><span>상호 협력</span><i class="ar ar--both ar--teal"></i></div>
+          <figure class="ch m-shop"><img src="images/ch-store.svg" alt="" width="104" height="104"><figcaption>판매상점<small>상품 판매</small></figcaption></figure>
+
+          <div class="marr marr--v m-a3"><i class="ar ar--up ar--gold"></i><span class="gold">고객공유수수료<b>2%</b>지속 정산</span></div>
+          <div class="marr marr--diag m-a4">
+            <svg viewBox="0 0 120 90" aria-hidden="true"><path d="M112 6 18 80" stroke="#0e6b7d" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M14 84l2-18 14 12z" fill="#0e6b7d"/></svg>
+            <span>수수료 <b>4%</b><small>고객공유 2% + 중개 2%</small></span>
+          </div>
+
+          <figure class="ch m-rider"><img src="images/ch-rider.svg" alt="" width="104" height="104"><figcaption>배송기사<small>배송 업무</small></figcaption></figure>
+          <div class="marr m-a5"><span>배달료 지불</span><i class="ar ar--l ar--teal"></i></div>
+          <figure class="ch m-plat"><img src="images/ch-platform.svg" alt="" width="120" height="120"><figcaption>온동네 플랫폼사<small>플랫폼 개발 · 운영만</small></figcaption></figure>
+          <div class="marr m-a6"><span>관리수수료 1%</span><i class="ar ar--r ar--teal"></i></div>
+          <figure class="ch m-mgr"><img src="images/ch-manager.svg" alt="" width="104" height="104"><figcaption>로컬매니저<small>판매상점 모집 · 교육</small></figcaption></figure>
+        </div>
+
+        <aside class="split">
+          <h4>판매상점 수수료 4% 배정</h4>
+          <div class="donut" aria-hidden="true"><span>4<small>%</small></span></div>
+          <ul class="split__list">
+            <li class="s-gold"><b>2%</b><div><strong>고객공유수수료 → 서비스 제공자</strong><span>고객을 유치한 상점 · 매니저 · 배송기사에게 지속 정산</span></div></li>
+            <li class="s-teal"><b>1%</b><div><strong>중개수수료 → 플랫폼사</strong><span>서버 · 인프라 · 기술 개발 · 플랫폼 운영</span></div></li>
+            <li class="s-navy"><b>1%</b><div><strong>중개수수료 → 로컬매니저</strong><span>상점 관리 · 지역 마케팅 · 배송기사 섭외</span></div></li>
+          </ul>
+          <p class="split__note">* 고객공유에 동의한 상점만 고객공유수수료가 차감됩니다.</p>
+        </aside>
+      </div>
+      <p class="st__foot"><b>플랫폼은 환경만 제공하고, 고객 모집은 서비스 제공자가 직접.</b> 독점적 통제 구조에서 서비스 제공자가 운영주체가 되어 경쟁력을 키웁니다.</p>
+    </article>
+
+    <ol class="share-steps">
+      <li><b>고객 유치</b>상점 · 매니저 · 배송기사가 QR로 고객을 직접 유치합니다. 플랫폼사는 고객을 모집하지 않습니다.</li>
+      <li><b>직거래 이용</b>유치된 고객이 온동네의 판매상점에서 주문 · 예약 등 서비스를 이용합니다.</li>
+      <li><b>2% 지속 정산</b>고객이 이용할 때마다 고객공유수수료 2%가 유치한 서비스 제공자에게 계속 정산됩니다.</li>
+    </ol>
 
     <h3 class="sub-title">온동네 직거래 서비스 분야</h3>
     <div class="fields">

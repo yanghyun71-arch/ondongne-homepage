@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="독점 중개앱">
+  <circle cx="80" cy="80" r="78" fill="#f1f2f4"/>
+  <!-- 왕관 -->
+  <path d="M54 34l10 12 16-18 16 18 10-12 4 22H50z" fill="#f2b13d" stroke="#b7791f" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="54" cy="34" r="4" fill="#f2b13d"/><circle cx="80" cy="26" r="4" fill="#f2b13d"/><circle cx="106" cy="34" r="4" fill="#f2b13d"/>
+  <!-- 휴대폰 -->
+  <rect x="46" y="56" width="68" height="96" rx="12" fill="#2f3340"/>
+  <rect x="52" y="66" width="56" height="76" rx="6" fill="#454a59"/>
+  <rect x="70" y="60" width="20" height="3" rx="1.5" fill="#6b7080"/>
+  <text x="80" y="92" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="900" fill="#fff" text-anchor="middle">중개앱</text>
+  <!-- 화난 눈 -->
+  <path d="M62 104l10 4M98 104l-10 4" stroke="#ff8f8f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="68" cy="112" r="3" fill="#fff"/><circle cx="92" cy="112" r="3" fill="#fff"/>
+  <path d="M70 128q10-6 20 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- 돈 -->
+  <circle cx="126" cy="70" r="15" fill="#e0483a"/>
+  <g transform="translate(126 70) scale(1.1)" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-7 -6 -3.5 6 0 -3 3.5 6 7 -6"/><path d="M-8.5 -1h17M-8.5 2.5h17" stroke-width="1.8"/></g>
+  <circle cx="34" cy="96" r="12" fill="#e0483a"/>
+  <g transform="translate(34 96) scale(0.9)" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-7 -6 -3.5 6 0 -3 3.5 6 7 -6"/><path d="M-8.5 -1h17M-8.5 2.5h17" stroke-width="1.8"/></g>
+  <circle cx="132" cy="112" r="10" fill="#e0483a" opacity=".85"/>
+  <g transform="translate(132 112) scale(0.75)" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-7 -6 -3.5 6 0 -3 3.5 6 7 -6"/><path d="M-8.5 -1h17M-8.5 2.5h17" stroke-width="1.8"/></g>
+</svg>

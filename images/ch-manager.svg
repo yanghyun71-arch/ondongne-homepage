@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="매니저">
+  <circle cx="80" cy="80" r="78" fill="#e8f4f6"/>
+  <!-- 정장 -->
+  <path d="M28 160c2-30 22-46 52-46s50 16 52 46z" fill="#0b3d4a"/>
+  <path d="M64 114l16 22 16-22z" fill="#fff"/>
+  <path d="M77 120h6l3 22-6 8-6-8z" fill="#12868f"/>
+  <path d="M64 114l10 26-12-6zM96 114l-10 26 12-6z" fill="#0e5566"/>
+  <rect x="71" y="100" width="18" height="16" rx="7" fill="#f6c6a5"/>
+  <!-- 머리 -->
+  <circle cx="44" cy="76" r="8" fill="#f9cfb0"/>
+  <circle cx="116" cy="76" r="8" fill="#f9cfb0"/>
+  <circle cx="80" cy="72" r="37" fill="#ffdcc2"/>
+  <path d="M43 76c-6-32 14-48 38-48 25 0 43 16 36 46-6-14-18-22-34-22-12 0-22 4-30 12-4 3-7 7-10 12z" fill="#3a2a22"/>
+  <path d="M86 32c10 2 20 10 22 22-6-9-14-14-24-15z" fill="#4c382d"/>
+  <!-- 얼굴 -->
+  <ellipse cx="67" cy="79" rx="5.5" ry="6.5" fill="#2b2a33"/>
+  <ellipse cx="93" cy="79" rx="5.5" ry="6.5" fill="#2b2a33"/>
+  <circle cx="69" cy="76.5" r="2" fill="#fff"/>
+  <circle cx="95" cy="76.5" r="2" fill="#fff"/>
+  <path d="M60 67q6-3 12 0M88 67q6-3 12 0" stroke="#3a2a22" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="57" cy="91" rx="7" ry="4" fill="#ff8f8f" opacity=".45"/>
+  <ellipse cx="103" cy="91" rx="7" ry="4" fill="#ff8f8f" opacity=".45"/>
+  <path d="M72 92q8 8 16 0" stroke="#c2413a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- 태블릿 -->
+  <g transform="rotate(-6 80 136)">
+    <rect x="52" y="118" width="56" height="38" rx="6" fill="#0e5566"/>
+    <rect x="56" y="122" width="48" height="30" rx="3" fill="#d7f5ef"/>
+    <path d="M61 145l9-9 7 5 12-12 8 6" stroke="#12868f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="97" cy="135" r="3" fill="#f2b13d"/>
+  </g>
+  <circle cx="54" cy="142" r="7" fill="#ffdcc2"/>
+  <circle cx="108" cy="140" r="7" fill="#ffdcc2"/>
+</svg>
