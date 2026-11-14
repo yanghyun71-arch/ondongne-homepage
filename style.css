@@ -595,20 +595,47 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .steps strong { display: block; color: var(--ink); font-size: 1.1rem; margin-bottom: 6px; }
 .steps p { font-size: .93rem; }
 
-/* ===== FAQ ===== */
-.faq details { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm); margin-bottom: 10px; }
+/* ===== FAQ (고객지원) ===== */
+#faq { padding-top: 72px; padding-bottom: 88px; }
+.faq { overflow: hidden; border-radius: 22px; background: #fff; border: 2px solid var(--navy); box-shadow: var(--shadow); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 0; }
 .faq summary {
-  cursor: pointer; list-style: none; padding: 20px 56px 20px 24px;
-  font-weight: 700; color: var(--ink); position: relative;
+  cursor: pointer; list-style: none; position: relative;
+  display: flex; align-items: center; gap: 14px; padding: 18px 64px 18px 22px;
+  font-weight: 800; color: var(--ink); font-size: 1.02rem;
 }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after {
-  content: "+"; position: absolute; right: 24px; top: 50%; transform: translateY(-50%);
-  font-size: 1.4rem; font-weight: 400; color: var(--mute); transition: transform .2s;
+.faq summary::before {
+  content: "Q"; display: grid; place-items: center; flex: none; width: 34px; height: 34px; border-radius: 50%;
+  background: var(--navy); color: #fff; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: .95rem; font-weight: 700;
 }
+.faq summary::after {
+  content: "+"; position: absolute; right: 22px; top: 50%; transform: translateY(-50%);
+  display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--teal-soft);
+  font-size: 1.3rem; font-weight: 700; color: var(--teal); transition: transform .2s;
+}
+.faq details[open] { background: var(--bg-tint); }
+.faq details[open] summary { color: var(--navy); }
 .faq details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
-.faq details p { padding: 0 24px 22px; }
+.faq details p { position: relative; margin: 0 22px 18px 70px; padding: 14px 18px 14px 50px; border-radius: 14px; background: #fff; border: 1px solid var(--line); color: var(--body); }
+.faq details p::before {
+  content: "A"; position: absolute; left: 12px; top: 12px; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--gold); color: #5a3d00; font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: .85rem; font-weight: 700;
+}
 .faq details a { color: var(--brand); font-weight: 600; text-decoration: underline; }
+.cs-band { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px 26px; margin-top: 28px; padding: 18px 24px; border-radius: 20px; background: var(--navy); }
+.cs-band b { color: var(--gold); font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.1rem; font-weight: 700; }
+.cs-band a { display: inline-flex; align-items: center; gap: 8px; color: #fff; font-weight: 700; }
+.cs-band a:hover { color: var(--gold); }
+.cs-band svg { width: 20px; height: 20px; fill: currentColor; }
+@media (max-width: 760px) {
+  #faq { padding-top: 48px; padding-bottom: 56px; }
+  .faq summary { padding: 16px 52px 16px 14px; font-size: .95rem; gap: 10px; }
+  .faq summary::after { right: 12px; }
+  .faq details p { margin: 0 12px 14px; }
+  .cs-band { flex-direction: column; }
+}
 
 /* ===== 푸터 ===== */
 .footer { background: #0a3440; color: #9fb7bd; padding: 56px 0 40px; font-size: .85rem; }
