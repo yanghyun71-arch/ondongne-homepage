@@ -657,6 +657,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .slogan h1 { margin-bottom: 14px; }
 .slogan h1 em { background: linear-gradient(transparent 62%, rgba(18, 134, 143, .2) 0); padding: 0 4px; }
 .slogan .hero__lead { margin: 0 auto; }
+.slogan__brand { color: var(--brand); white-space: nowrap; }
 
 .mv {
   position: relative; display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px 44px; align-items: center;
