@@ -23,11 +23,11 @@
       <img src="https://www.ssondongne.kr/images/logo-red.png" alt="상생온동네" width="110" height="47">
     </a>
     <nav class="header__nav" aria-label="주요 메뉴">
-      <a href="#onnuri">온누리상품권</a>
-      <a href="#benefits">고객 혜택</a>
-      <a href="#model">상생 구조</a>
-      <a href="#services">서비스</a>
-      <a href="#partners">지자체 협력</a>
+      <a href="#direct">직거래서비스</a>
+      <a href="#onnuri">고객혜택</a>
+      <a href="#merchant">소상공인혜택</a>
+      <a href="#vision">서비스 비전</a>
+      <a href="#partners">지자체 공공앱</a>
       <a href="#faq">고객지원</a>
     </nav>
     <nav class="header__cta" aria-label="파트너 바로가기">
@@ -43,11 +43,83 @@
 
 <!-- ============ 히어로 ============ -->
 <section class="hero">
-  <div class="wrap hero__inner">
-    <div class="hero__text">
+  <div class="wrap">
+    <!-- 슬로건 -->
+    <div class="slogan">
       <p class="hero__badge"><span>제휴</span>소상공인시장진흥공단 온누리상품권 제휴앱</p>
-      <h1>배달앱 수수료는 줄이고<br><em>혜택은 고객에게</em></h1>
-      <p class="hero__lead">고객과 동네 가게를 직접 잇는 상생온동네. <br>구독료 없이 배달팁 무료, 상품권 할인까지 앱 하나로.</p>
+      <h1>중개앱 없이, <em>우리 동네를 직접 잇다</em></h1>
+      <p class="hero__lead">고객과 소상공인·서비스 제공자가 직접 거래하는 직거래 공유앱, 상생온동네</p>
+    </div>
+
+    <!-- 메인 이미지: 다양한 업종의 소상공인 · 고객 · 서비스 제공자를 잇는 직거래 공유앱 -->
+    <div class="mv" role="img" aria-label="음식점·마트·숙박·미용실·전통시장·세탁 등 다양한 업종의 소상공인과 고객, 라이더·택배·택시·대리기사가 상생온동네 앱으로 직접 연결되는 모습">
+      <div class="mv__side mv__side--left">
+        <p class="mv__label">다양한 업종의 소상공인</p>
+        <div class="mv__nodes">
+          <span class="node"><i>🍗</i>음식점</span>
+          <span class="node"><i>🛒</i>마트</span>
+          <span class="node"><i>🏨</i>숙박</span>
+          <span class="node"><i>💇</i>미용실</span>
+          <span class="node"><i>🥬</i>전통시장</span>
+          <span class="node"><i>🧺</i>세탁</span>
+        </div>
+        <span class="mv__link">직거래</span>
+      </div>
+
+      <div class="mv__center">
+        <div class="mv__ring"></div>
+        <div class="phone" aria-hidden="true">
+          <div class="phone__notch"></div>
+          <div class="app">
+            <div class="app__top">
+              <span class="app__loc"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>우리동네 <i>›</i></span>
+              <svg class="app__bell" viewBox="0 0 24 24"><path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2zm6-6V11a6 6 0 0 0-5-5.9V4a1 1 0 0 0-2 0v1.1A6 6 0 0 0 6 11v5l-2 2v1h16v-1z"/></svg>
+            </div>
+            <div class="app__banner"><img src="images/app-banner-main.png" alt=""><span>1 / 3</span></div>
+            <div class="app__seg"><b>무료배달</b><span>픽업주문</span><span>온누리마켓</span><span>숙박예약</span></div>
+            <div class="app__cats">
+              <span><i>🛒</i>마트</span><span><i>🍽️</i>1인분</span><span><i>🍲</i>한식·죽</span><span><i>🍙</i>분식</span>
+              <span><i>🍜</i>중식</span><span><i>🍖</i>족발·보쌈</span><span><i>🍕</i>피자</span><span><i>🍣</i>돈까스·일식</span>
+              <span><i>🍗</i>치킨</span><span><i>🍝</i>아시안·양식</span><span><i>🌙</i>야식</span><span><i>🥘</i>찜·탕</span>
+            </div>
+            <div class="app__banner app__banner--sub"><img src="images/app-banner-farm.png" alt=""><span>1 / 2</span></div>
+            <div class="app__chips"><span>🌱 특산물</span><span>🏪 온누리마켓</span><span>🛒 우리동네마트</span></div>
+            <div class="app__tabs">
+              <span class="on"><svg viewBox="0 0 24 24"><path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg>홈</span>
+              <span><svg viewBox="0 0 24 24"><path d="M10 4a6 6 0 1 0 3.6 10.8l4.8 4.8 1.4-1.4-4.8-4.8A6 6 0 0 0 10 4zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>검색</span>
+              <span><svg viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2"/></svg>찜</span>
+              <span><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zM14 3v5h5" fill="none" stroke="currentColor" stroke-width="2"/></svg>이용내역</span>
+              <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>마이페이지</span>
+            </div>
+          </div>
+        </div>
+        <span class="mv__tag">직거래 공유앱</span>
+      </div>
+
+      <div class="mv__side mv__side--right">
+        <p class="mv__label">우리 동네 고객</p>
+        <div class="mv__people">
+          <span class="person"><img src="images/il-customer.svg" alt="" width="64" height="64">직장인</span>
+          <span class="person"><i>👨‍👩‍👧</i>가족</span>
+          <span class="person"><i>👵</i>어르신</span>
+        </div>
+        <span class="mv__link mv__link--left">직거래</span>
+      </div>
+
+      <div class="mv__bottom">
+        <p class="mv__label">서비스 제공자</p>
+        <div class="mv__nodes mv__nodes--row">
+          <span class="node node--sm"><i>🛵</i>라이더</span>
+          <span class="node node--sm"><i>📦</i>택배</span>
+          <span class="node node--sm"><i>🚕</i>택시기사</span>
+          <span class="node node--sm"><i>🚗</i>대리기사</span>
+          <span class="node node--sm"><i>🧑‍💼</i>매니저</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 다운로드 · 핵심 숫자 -->
+    <div class="hero__bar">
       <div class="hero__stores" id="download">
         <a href="https://apps.apple.com/kr/app/%EC%98%A8%EB%8F%99%EB%84%A4-%EC%86%8C%EC%83%81%EA%B3%B5%EC%9D%B8-%EA%B3%B5%EC%9C%A0%EC%A3%BC%EB%AC%B8%EC%95%B1/id6758286710" target="_blank" rel="noopener">
           <img src="https://www.ssondongne.kr/images/app-store-badge.png" alt="App Store에서 다운로드" width="162" height="48">
@@ -60,37 +132,78 @@
         <div><dt>업계 최저 수수료</dt><dd>4<small>%</small></dd></div>
         <div><dt>월 구독료</dt><dd>0<small>원</small></dd></div>
         <div><dt>배달팁 무료 반경</dt><dd>2<small>km</small></dd></div>
+        <div><dt>온누리상품권 결제</dt><dd>7<small>% 할인</small></dd></div>
       </dl>
     </div>
-    <div class="hero__visual">
-      <div class="phone" role="img" aria-label="상생온동네 고객앱 홈 화면">
-        <div class="phone__notch"></div>
-        <div class="app" aria-hidden="true">
-          <div class="app__top">
-            <span class="app__loc"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>우리동네 <i>›</i></span>
-            <svg class="app__bell" viewBox="0 0 24 24"><path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2zm6-6V11a6 6 0 0 0-5-5.9V4a1 1 0 0 0-2 0v1.1A6 6 0 0 0 6 11v5l-2 2v1h16v-1z"/></svg>
-          </div>
-          <div class="app__banner"><img src="images/app-banner-main.png" alt=""><span>1 / 3</span></div>
-          <div class="app__seg"><b>무료배달</b><span>픽업주문</span><span>온누리마켓</span><span>숙박예약</span></div>
-          <div class="app__cats">
-            <span><i>🛒</i>마트</span><span><i>🍽️</i>1인분</span><span><i>🍲</i>한식·죽</span><span><i>🍙</i>분식</span>
-            <span><i>🍜</i>중식</span><span><i>🍖</i>족발·보쌈</span><span><i>🍕</i>피자</span><span><i>🍣</i>돈까스·일식</span>
-            <span><i>🍗</i>치킨</span><span><i>🍝</i>아시안·양식</span><span><i>🌙</i>야식</span><span><i>🥘</i>찜·탕</span>
-          </div>
-          <div class="app__banner app__banner--sub"><img src="images/app-banner-farm.png" alt=""><span>1 / 2</span></div>
-          <div class="app__chips"><span>🌱 특산물</span><span>🏪 온누리마켓</span><span>🛒 우리동네마트</span></div>
-          <div class="app__tabs">
-            <span class="on"><svg viewBox="0 0 24 24"><path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg>홈</span>
-            <span><svg viewBox="0 0 24 24"><path d="M10 4a6 6 0 1 0 3.6 10.8l4.8 4.8 1.4-1.4-4.8-4.8A6 6 0 0 0 10 4zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>검색</span>
-            <span><svg viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="2"/></svg>찜</span>
-            <span><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zM14 3v5h5" fill="none" stroke="currentColor" stroke-width="2"/></svg>이용내역</span>
-            <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>마이페이지</span>
+  </div>
+</section>
+
+<!-- ============ 직거래서비스 ============ -->
+<section class="section" id="direct">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="tag">직거래서비스</p>
+      <h2>중개앱을 빼면,<br>고객과 동네가 직접 만납니다</h2>
+      <p>고객과 서비스 제공자(상점·매니저·배송) 사이의 중개앱을 없애고, 서로 직접 거래하는 플랫폼을 제공합니다.</p>
+    </header>
+
+    <div class="vs">
+      <!-- 기존 중개앱 -->
+      <article class="vs__card vs__card--old">
+        <header class="vs__head"><span class="vs__chip">기존 방식</span><h3>중개앱 플랫폼이 가운데에서 독점</h3></header>
+        <div class="vs__flow">
+          <figure class="who"><img src="images/il-customer.svg" alt="" width="96" height="96"><figcaption>고객</figcaption></figure>
+          <div class="link"><span>주문·결제 중개</span><i class="ln ln--gray"></i></div>
+          <figure class="who who--mid"><img src="images/il-platform.svg" alt="" width="96" height="96"><figcaption>중개앱 플랫폼</figcaption></figure>
+          <div class="link"><span>주문 전달</span><i class="ln ln--gray"></i><span class="link__back">수수료·광고비 → 플랫폼 수익</span><i class="ln ln--red ln--back"></i></div>
+          <div class="group group--gray">
+            <figure class="who who--sm"><img src="images/il-store.svg" alt="" width="64" height="64"><figcaption>상점</figcaption></figure>
+            <figure class="who who--sm"><img src="images/il-manager.svg" alt="" width="64" height="64"><figcaption>매니저</figcaption></figure>
+            <figure class="who who--sm"><img src="images/il-rider.svg" alt="" width="64" height="64"><figcaption>라이더</figcaption></figure>
           </div>
         </div>
-      </div>
-      <div class="hero__float">
-        <b>온누리상품권</b><span>결제 시 <em>7%</em> 할인</span>
-      </div>
+        <ul class="problems">
+          <li><b>높은 수수료</b>매출의 상당 부분이 중개수수료로</li>
+          <li><b>광고비 부담</b>노출 경쟁을 위한 광고비 지출</li>
+          <li><b>독점적 불공정행위</b>플랫폼이 정하는 조건을 따를 수밖에</li>
+        </ul>
+      </article>
+
+      <div class="vs__switch"><span>중개앱</span><b>→</b><span>중개앱을 제거하고 직거래로</span></div>
+
+      <!-- 상생온동네 직거래 -->
+      <article class="vs__card vs__card--new">
+        <header class="vs__head"><span class="vs__chip vs__chip--brand">상생온동네</span><h3>고객 ↔ 서비스 제공자 직거래</h3></header>
+        <div class="vs__flow">
+          <figure class="who"><img src="images/il-customer.svg" alt="" width="96" height="96"><figcaption>고객</figcaption></figure>
+          <div class="link link--wide">
+            <span>직접 주문·거래</span><i class="ln ln--teal"></i>
+            <span>상품·배송·이동 서비스</span><i class="ln ln--teal ln--back"></i>
+            <span class="link__good">수수료 절감분 → 가격·할인 혜택</span><i class="ln ln--brand ln--back"></i>
+          </div>
+          <div class="group group--teal">
+            <p class="group__label">서비스 제공자</p>
+            <figure class="who who--sm"><img src="images/il-store.svg" alt="" width="64" height="64"><figcaption>상점</figcaption></figure>
+            <figure class="who who--sm"><img src="images/il-manager.svg" alt="" width="64" height="64"><figcaption>매니저</figcaption></figure>
+            <figure class="who who--sm"><img src="images/il-rider.svg" alt="" width="64" height="64"><figcaption>라이더</figcaption></figure>
+            <figure class="who who--sm who--emoji"><i>📦</i><figcaption>택배</figcaption></figure>
+            <figure class="who who--sm who--emoji"><i>🚕</i><figcaption>택시기사</figcaption></figure>
+            <figure class="who who--sm who--emoji"><i>🚗</i><figcaption>대리기사</figcaption></figure>
+            <p class="group__foot">직접 고객 유치 · 고객 공유 · 지역 공동운영</p>
+          </div>
+        </div>
+        <p class="vs__support">플랫폼사 지원 · 앱 개발·운영 · 주문·결제 지원 · 고객공유수수료 정산</p>
+      </article>
+    </div>
+
+    <h3 class="sub-title">온동네 직거래 서비스 분야</h3>
+    <div class="fields">
+      <article class="field"><i>🛵</i><h4>배달앱</h4><p>음식 · 마트 · 특산물</p><span>상점 · 라이더</span></article>
+      <article class="field"><i>🏨</i><h4>숙박앱</h4><p>우리 동네 · 인근 숙소 예약</p><span>숙박업소</span></article>
+      <article class="field"><i>🛍️</i><h4>쇼핑앱</h4><p>온누리마켓 · 지역 상품</p><span>상점 · 택배</span></article>
+      <article class="field"><i>🚕</i><h4>택시앱</h4><p>동네 이동 호출</p><span>택시기사</span></article>
+      <article class="field"><i>🚗</i><h4>대리운전앱</h4><p>안전한 귀가</p><span>대리기사</span></article>
+      <article class="field field--more"><i>＋</i><h4>그 밖의 생활서비스</h4><p>이미용 · 세탁 · 세차 등</p><span>계속 확장</span></article>
     </div>
   </div>
 </section>
@@ -191,58 +304,54 @@
   </div>
 </section>
 
-<!-- ============ 상생 구조 (PPT 2) ============ -->
-<section class="section section--tint" id="model">
+<!-- ============ 소상공인혜택 ============ -->
+<section class="section section--tint" id="merchant">
   <div class="wrap">
     <header class="section__head">
-      <p class="tag">새로운 공공배달앱</p>
-      <h2>중개 중심에서<br>직거래·지역 공동운영으로</h2>
-      <p>고객은 가게와 직접 연결되고, 지역 운영은 모객파트너가 담당합니다.</p>
+      <p class="tag">소상공인혜택</p>
+      <h2>광고비 경쟁 대신,<br>내 고객을 직접 만듭니다</h2>
+      <p>중개앱에 나가던 수수료와 광고비 부담을 줄이고, 우리 가게 단골을 직접 늘리세요.</p>
     </header>
-
-    <div class="vs">
-      <!-- 기존 중개앱 -->
-      <article class="vs__card vs__card--old">
-        <header class="vs__head"><span class="vs__chip">기존 민간배달앱</span><h3>플랫폼 중개 방식</h3></header>
-        <div class="vs__flow">
-          <figure class="who"><img src="images/il-customer.svg" alt="" width="96" height="96"><figcaption>고객</figcaption></figure>
-          <div class="link"><span>주문·결제 중개</span><i class="ln ln--gray"></i></div>
-          <figure class="who who--mid"><img src="images/il-platform.svg" alt="" width="96" height="96"><figcaption>중개앱</figcaption></figure>
-          <div class="link"><span>주문 전달</span><i class="ln ln--gray"></i><span class="link__back">중개수수료 → 플랫폼 수익</span><i class="ln ln--red ln--back"></i></div>
-          <div class="group group--gray">
-            <figure class="who who--sm"><img src="images/il-store.svg" alt="" width="64" height="64"><figcaption>상점</figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-manager.svg" alt="" width="64" height="64"><figcaption>매니저</figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-rider.svg" alt="" width="64" height="64"><figcaption>라이더</figcaption></figure>
-          </div>
-        </div>
-        <p class="vs__result vs__result--bad">수수료와 구독료 부담이 결국 가격과 배달팁으로</p>
+    <div class="merits">
+      <article class="merit">
+        <span class="merit__big">4<small>%</small></span>
+        <h3>업계 최저 수수료</h3>
+        <p>낮은 수수료로 같은 매출에도 남는 몫이 커집니다.</p>
       </article>
-
-      <div class="vs__switch"><span>중개 중심</span><b>→</b><span>직거래 · 지역 공동운영</span></div>
-
-      <!-- 상생온동네 직거래 -->
-      <article class="vs__card vs__card--new">
-        <header class="vs__head"><span class="vs__chip vs__chip--brand">상생온동네</span><h3>직거래 + 모객파트너 공동 운영</h3></header>
-        <div class="vs__flow">
-          <figure class="who"><img src="images/il-customer.svg" alt="" width="96" height="96"><figcaption>고객</figcaption></figure>
-          <div class="link link--wide">
-            <span>직접 주문·거래</span><i class="ln ln--teal"></i>
-            <span>상품·배달 서비스</span><i class="ln ln--teal ln--back"></i>
-            <span class="link__good">수수료 절감분 → 가격·할인 혜택</span><i class="ln ln--brand ln--back"></i>
-          </div>
-          <div class="group group--teal">
-            <p class="group__label">지역 운영주체 = 모객파트너</p>
-            <figure class="who who--sm"><img src="images/il-store.svg" alt="" width="64" height="64"><figcaption>상점<small>상품·주문 관리</small></figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-manager.svg" alt="" width="64" height="64"><figcaption>매니저<small>운영·서비스 관리</small></figcaption></figure>
-            <figure class="who who--sm"><img src="images/il-rider.svg" alt="" width="64" height="64"><figcaption>라이더<small>배달·현장 서비스</small></figcaption></figure>
-            <p class="group__foot">직접 고객 유치 · 고객 공유 · 지역 공동운영</p>
-          </div>
-        </div>
-        <p class="vs__support">플랫폼사 지원 · 앱 개발·운영 · 주문·결제 지원 · 고객공유수수료 정산</p>
+      <article class="merit">
+        <span class="merit__icon">🤝</span>
+        <h3>직접 고객 유치</h3>
+        <p>QR·추천으로 모은 고객이 플랫폼이 아닌 우리 가게의 단골이 됩니다.</p>
+      </article>
+      <article class="merit">
+        <span class="merit__icon">🔁</span>
+        <h3>고객 공유 성과 정산</h3>
+        <p>내가 유치한 고객이 온동네의 다른 서비스를 이용하면 공유 성과에 따라 정산받습니다.</p>
+      </article>
+      <article class="merit">
+        <span class="merit__icon">📍</span>
+        <h3>지역 공동운영 지원</h3>
+        <p>지역 매니저가 현장에서 가맹 · 배달 · 프로모션을 함께 운영합니다.</p>
       </article>
     </div>
+    <ol class="flow flow--light">
+      <li>수수료·광고비 절감</li>
+      <li>가격 경쟁력</li>
+      <li>단골 고객 확보</li>
+    </ol>
+  </div>
+</section>
 
-    <h3 class="cycle__title">지속 가능한 공공배달앱의 선순환</h3>
+<!-- ============ 서비스 비전 ============ -->
+<section class="section" id="vision">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="tag">서비스 비전</p>
+      <h2>고객 · 소상공인 · 지역이<br>함께 크는 공공 직거래 플랫폼</h2>
+      <p>직접 유치한 고객을 함께 나누고, 절감한 수수료를 다시 고객 혜택으로 돌려주는 선순환을 만듭니다.</p>
+    </header>
+
+    <h3 class="cycle__title">지속 가능한 공공 직거래 플랫폼의 선순환</h3>
     <ol class="cycle">
       <li><strong>직접 고객 유치</strong><span>상점·매니저·라이더</span></li>
       <li><strong>고객 공유</strong><span>공유 성과에 따른 정산</span></li>
@@ -300,8 +409,8 @@
 <section class="section section--dark" id="partners">
   <div class="wrap">
     <header class="section__head">
-      <p class="tag tag--light">지자체 협력</p>
-      <h2>지자체·소상공인협회·총판이<br>함께 여는 우리 동네 앱</h2>
+      <p class="tag tag--light">지자체 공공앱</p>
+      <h2>지자체·소상공인협회·총판이<br>함께 여는 우리 동네 공공앱</h2>
       <p>지역별 브랜딩과 특산물, 지자체 공지·혜택까지 담은 지역 전용 상생온동네를 운영합니다.</p>
     </header>
 
