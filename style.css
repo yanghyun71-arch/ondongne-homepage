@@ -240,6 +240,8 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .tag--lg { font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.35rem; padding: 8px 22px; border-radius: 999px; background: var(--brand-soft); color: var(--brand); margin-bottom: 20px; }
 .section__head .h2-line { font-size: clamp(1.35rem, 2.6vw, 2.15rem); white-space: nowrap; }
 .h2-line span { color: var(--brand); }
+.section__head--full { max-width: none; }
+.section__head .h2-line--long { font-size: clamp(1.2rem, 2.15vw, 1.72rem); }
 @media (max-width: 1024px) {
   .section__head .h2-line { white-space: normal; }
   .h2-line span { display: block; }
