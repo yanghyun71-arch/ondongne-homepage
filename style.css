@@ -236,6 +236,18 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .section__head { text-align: center; max-width: 680px; margin: 0 auto 64px; }
 .section__head h2 { font-size: clamp(1.4rem, 3.2vw, 2.5rem); line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px; }
 .section__head p:not(.tag) { font-size: 1.02rem; line-height: 1.75; color: var(--body); }
+.section__head--wide { max-width: 1040px; }
+.tag--lg { font-family: "GmarketSans", "Noto Sans KR", sans-serif; font-size: 1.35rem; padding: 8px 22px; border-radius: 999px; background: var(--brand-soft); color: var(--brand); margin-bottom: 20px; }
+.section__head .h2-line { font-size: clamp(1.35rem, 2.6vw, 2.15rem); white-space: nowrap; }
+.h2-line span { color: var(--brand); }
+@media (max-width: 1024px) {
+  .section__head .h2-line { white-space: normal; }
+  .h2-line span { display: block; }
+}
+@media (max-width: 760px) {
+  .tag--lg { font-size: 1.1rem; padding: 6px 18px; }
+  .section__head--wide p br { display: none; }
+}
 
 /* ===== 고객 혜택 ===== */
 .benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
