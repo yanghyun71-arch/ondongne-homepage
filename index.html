@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>상생온동네 - 직거래 공공배달앱</title>
-  <meta name="description" content="수수료 4%, 구독료 0원, 2km 배달팁 무료. 고객과 동네 가게를 직접 잇는 직거래 공공배달앱 상생온동네.">
+  <meta name="description" content="중개수수료 2%, 구독료 0원, 2km 배달팁 무료. 고객과 동네 가게를 직접 잇는 직거래 공공배달앱 상생온동네.">
   <meta property="og:title" content="상생온동네 - 직거래 공공배달앱">
   <meta property="og:description" content="구독료 없이 배달팁 무료, 최저가 비교, 온누리·지역사랑상품권 할인까지.">
   <meta property="og:image" content="https://www.ssondongne.kr/images/logo-red.png">
@@ -46,7 +46,11 @@
   <div class="wrap">
     <!-- 슬로건 -->
     <div class="slogan">
-      <p class="hero__badge"><span>제휴</span>소상공인시장진흥공단 온누리상품권 제휴앱</p>
+      <div class="bi-row">
+        <img src="images/bi-semas.png" alt="소상공인시장진흥공단" class="bi-row__semas" width="146" height="38">
+        <img src="images/bi-onnuri.png" alt="디지털온누리상품권" class="bi-row__onnuri" width="44" height="42">
+        <span class="bi-row__txt"><b>제휴</b>온누리상품권 제휴앱</span>
+      </div>
       <h1>중개앱 없이, <em>우리 동네를 직접 잇다</em></h1>
       <p class="hero__lead">고객과 소상공인·서비스 제공자가 직접 거래하는 직거래 공유앱, 상생온동네</p>
     </div>
@@ -129,7 +133,7 @@
         </a>
       </div>
       <dl class="hero__stats">
-        <div><dt>업계 최저 수수료</dt><dd>4<small>%</small></dd></div>
+        <div><dt>중개수수료</dt><dd>2<small>%</small></dd></div>
         <div><dt>월 구독료</dt><dd>0<small>원</small></dd></div>
         <div><dt>배달팁 무료 반경</dt><dd>2<small>km</small></dd></div>
         <div><dt>온누리상품권 결제</dt><dd>7<small>% 할인</small></dd></div>
@@ -181,7 +185,7 @@
     <article class="st st--new">
       <header class="st__head"><span class="st__chip">대안</span><h3>온동네 공유형 직거래 서비스 구조</h3></header>
       <div class="st__body">
-        <div class="map" role="img" aria-label="고객은 서비스 제공자가 QR로 직접 유치하고, 판매상점은 플랫폼에 수수료 4%(고객공유 2%, 중개 2%)를 내며, 플랫폼은 서비스 제공자에게 고객공유수수료 2%, 매니저에게 관리수수료 1%, 배송기사에게 배달료를 지급합니다">
+        <div class="map" role="img" aria-label="고객은 서비스 제공자가 QR로 직접 유치하고, 판매상점은 플랫폼에 중개수수료 2%와 고객공유수수료 2%를 각각 내며, 플랫폼은 서비스 제공자에게 고객공유수수료 2%, 매니저에게 관리수수료 1%, 배송기사에게 배달료를 지급합니다">
           <figure class="ch m-cust"><img src="images/ch-customer.svg" alt="" width="104" height="104"><figcaption>고객<small>서비스 제공자 소속 QR고객</small></figcaption></figure>
           <div class="marr m-a1"><span>QR로 고객 유치</span><i class="ar ar--r ar--teal"></i></div>
           <div class="ch m-part">
@@ -193,8 +197,12 @@
 
           <div class="marr marr--v m-a3"><i class="ar ar--up ar--gold"></i><span class="gold">고객공유수수료<b>2%</b>지속 정산</span></div>
           <div class="marr marr--diag m-a4">
-            <svg viewBox="0 0 120 90" aria-hidden="true"><path d="M112 6 18 80" stroke="#0e6b7d" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M14 84l2-18 14 12z" fill="#0e6b7d"/></svg>
-            <span>수수료 <b>4%</b><small>고객공유 2% + 중개 2%</small></span>
+            <svg viewBox="0 0 120 90" aria-hidden="true">
+              <path d="M100 4 12 72" stroke="#0b3d4a" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M8 76l3-17 12 11z" fill="#0b3d4a"/>
+              <path d="M116 16 30 84" stroke="#e0a020" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M26 88l3-17 12 11z" fill="#e0a020"/>
+            </svg>
+            <span class="fee fee--mid">중개수수료 <b>2%</b></span>
+            <span class="fee fee--share">고객공유수수료 <b>2%</b></span>
           </div>
 
           <figure class="ch m-rider"><img src="images/ch-rider.svg" alt="" width="104" height="104"><figcaption>배송기사<small>배송 업무</small></figcaption></figure>
@@ -205,13 +213,20 @@
         </div>
 
         <aside class="split">
-          <h4>판매상점 수수료 4% 배정</h4>
-          <div class="donut" aria-hidden="true"><span>4<small>%</small></span></div>
-          <ul class="split__list">
-            <li class="s-gold"><b>2%</b><div><strong>고객공유수수료 → 서비스 제공자</strong><span>고객을 유치한 상점 · 매니저 · 배송기사에게 지속 정산</span></div></li>
-            <li class="s-teal"><b>1%</b><div><strong>중개수수료 → 플랫폼사</strong><span>서버 · 인프라 · 기술 개발 · 플랫폼 운영</span></div></li>
-            <li class="s-navy"><b>1%</b><div><strong>중개수수료 → 로컬매니저</strong><span>상점 관리 · 지역 마케팅 · 배송기사 섭외</span></div></li>
-          </ul>
+          <h4>판매상점 수수료 배정</h4>
+          <div class="fee-box fee-box--mid">
+            <p class="fee-box__head"><span>중개수수료</span><b>2%</b></p>
+            <ul class="split__list">
+              <li class="s-teal"><b>1%</b><div><strong>플랫폼사</strong><span>서버 · 인프라 · 기술 개발 · 플랫폼 운영</span></div></li>
+              <li class="s-navy"><b>1%</b><div><strong>로컬매니저</strong><span>상점 관리 · 지역 마케팅 · 배송기사 섭외</span></div></li>
+            </ul>
+          </div>
+          <div class="fee-box fee-box--share">
+            <p class="fee-box__head"><span>고객공유수수료</span><b>2%</b></p>
+            <ul class="split__list">
+              <li class="s-gold"><b>2%</b><div><strong>서비스 제공자</strong><span>고객을 유치한 상점 · 매니저 · 배송기사에게 지속 정산</span></div></li>
+            </ul>
+          </div>
           <p class="split__note">* 고객공유에 동의한 상점만 고객공유수수료가 차감됩니다.</p>
         </aside>
       </div>
@@ -240,7 +255,12 @@
 <section class="onnuri" id="onnuri">
   <div class="wrap onnuri__inner">
     <div class="onnuri__text">
-      <p class="onnuri__org">소상공인시장진흥공단 × 상생온동네</p>
+      <div class="onnuri__bi">
+        <img src="images/bi-semas.png" alt="소상공인시장진흥공단" class="onnuri__bi-semas" width="168" height="44">
+        <i>×</i>
+        <img src="images/bi-onnuri.png" alt="디지털온누리상품권" class="onnuri__bi-onnuri" width="54" height="52">
+        <span>공식 제휴앱</span>
+      </div>
       <h2>온누리상품권으로<br>배달·포장·장보기까지<br><em>7% 할인</em> 결제</h2>
       <p class="onnuri__lead">상생온동네는 소상공인시장진흥공단 온누리상품권 제휴앱입니다. <br>전통시장에서만 쓰던 온누리상품권을 이제 우리 동네 가게 주문에도 앱에서 바로 쓰세요.</p>
       <ul class="onnuri__points">
@@ -342,9 +362,9 @@
     </header>
     <div class="merits">
       <article class="merit">
-        <span class="merit__big">4<small>%</small></span>
-        <h3>업계 최저 수수료</h3>
-        <p>낮은 수수료로 같은 매출에도 남는 몫이 커집니다.</p>
+        <span class="merit__big">2<small>%</small></span>
+        <h3>중개수수료 2%</h3>
+        <p>낮은 중개수수료로 같은 매출에도 남는 몫이 커집니다. 고객공유수수료 2%는 고객공유에 동의한 상점만 별도로 차감됩니다.</p>
       </article>
       <article class="merit">
         <span class="merit__icon">🤝</span>
@@ -451,7 +471,7 @@
 
     <div class="pillars">
       <div><h3>지역자치단체 협력</h3><p>시·군·구청과 직접 협력해 지역 주민 전용 서비스를 구축합니다.</p></div>
-      <div><h3>소상공인협회와 상생</h3><p>수수료 4%와 무료 배달로 소상공인의 부담을 줄이고 매출을 높입니다.</p></div>
+      <div><h3>소상공인협회와 상생</h3><p>중개수수료 2%와 무료 배달로 소상공인의 부담을 줄이고 매출을 높입니다.</p></div>
       <div><h3>지역별 총판매니저</h3><p>현장에서 가맹점 관리, 배달 매니저 운영, 지역 프로모션을 책임집니다.</p></div>
     </div>
 
