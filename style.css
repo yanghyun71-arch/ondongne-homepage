@@ -476,6 +476,8 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .qd-sub { font-size: 13px; fill: #6f8086; font-weight: 600 !important; }
 .qd-sub--partner { fill: #0c7a82; font-weight: 800 !important; }
 .qd-plat { fill: #0b3d4a; }
+.qd-dash { fill: none; stroke: #6f8086; stroke-width: 2; stroke-dasharray: 6 5; }
+.qd-dash-t { font-size: 13px; fill: #4a5a60; }
 
 .qr-cases__note { margin: 20px 0 0; padding: 18px 20px; border-radius: 16px; background: var(--navy); color: #fff; text-align: center; line-height: 1.5; }
 .qr-cases__note strong { display: block; font-size: clamp(.98rem, 1.9vw, 1.2rem); }
@@ -949,6 +951,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 }
 .trade-broker__stamp span { font: 700 1.5rem/1 Arial, sans-serif; }
 .trade-broker__caption > span { color: var(--body); font-size: .8rem; font-weight: 600; }
+.trade-broker__issues { margin-top: 4px; padding: 9px 16px 10px; border-radius: 10px; background: #faf2ed; text-align: left; }
+.trade-broker__issues b { display: block; margin-bottom: 4px; color: #a3312b; font-size: .88rem; font-weight: 800; text-align: center; }
+.trade-broker__issues ol { margin: 0; padding: 0; list-style: none; counter-reset: issue; }
+.trade-broker__issues li { counter-increment: issue; color: var(--navy); font-size: .82rem; font-weight: 700; line-height: 1.6; white-space: nowrap; }
+.trade-broker__issues li::before { content: counter(issue) ") "; color: #a3312b; font-weight: 800; }
 .trade-support { display: flex; align-items: center; gap: 22px; border-radius: 14px; padding: 15px 22px; background: var(--navy); color: #fff; }
 .trade-support__name { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .trade-support__name img { width: 64px; height: auto; }
