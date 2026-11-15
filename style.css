@@ -916,8 +916,8 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 }
 .trade-flow--broker { grid-template-columns: minmax(95px, 1fr) minmax(96px, 1fr) 164px minmax(96px, 1fr) minmax(200px, 2fr); }
 .trade-flow--direct {
-  grid-template-columns: minmax(100px, 1fr) minmax(120px, 1.2fr) minmax(210px, 2fr);
-  max-width: 810px;
+  grid-template-columns: minmax(100px, 1fr) minmax(180px, 1.6fr) minmax(210px, 2fr);
+  max-width: 900px;
   margin-inline: auto;
   padding: 16px 0 26px;
 }
@@ -939,6 +939,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   border-top: 2px solid; border-right: 2px solid; transform: translateY(-50%) rotate(45deg); content: "";
 }
 .trade-link--back i::after { right: auto; left: 0; transform: translateY(-50%) rotate(-135deg); }
+.trade-link--shop, .trade-link--delivery { margin-top: 6px; }
+.trade-link--shop { color: #c0571f; }
+.trade-link--delivery { color: #2f6db3; }
+.trade-link--shop b, .trade-link--delivery b { display: inline-block; margin-right: 4px; padding: 0 6px; border-radius: 4px; color: #fff; background: #c0571f; }
+.trade-link--delivery b { background: #2f6db3; }
 
 .trade-broker__image { position: relative; width: 144px; margin: 0 auto; }
 .trade-broker__device { width: 100%; height: auto; }
@@ -972,7 +977,9 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .trade-broker__issues b { display: block; margin-bottom: 4px; color: #a3312b; font-size: .88rem; font-weight: 800; text-align: center; }
 .trade-broker__issues ol { margin: 0; padding: 0; list-style: none; counter-reset: issue; }
 .trade-broker__issues li { counter-increment: issue; color: var(--navy); font-size: .82rem; font-weight: 700; line-height: 1.6; white-space: nowrap; }
-.trade-broker__issues li::before { content: counter(issue) ") "; color: #a3312b; font-weight: 800; }
+.trade-broker__issues li::before { content: "① "; color: #a3312b; font-weight: 800; }
+.trade-broker__issues li:nth-child(2)::before { content: "② "; }
+.trade-broker__issues li:nth-child(3)::before { content: "③ "; }
 .trade-support { display: flex; align-items: center; gap: 22px; border-radius: 14px; padding: 15px 22px; background: var(--navy); color: #fff; }
 .trade-support__name { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .trade-support__name img { width: 64px; height: auto; }
