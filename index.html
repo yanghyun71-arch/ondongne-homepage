@@ -460,77 +460,177 @@
         <p>모객파트너(상점·로컬매니저·라이더)의 QR고객이 자사 상점은 물론 다른 상점에서 주문해도 고객공유수수료 2%가 모객파트너에게 정산됩니다.</p>
       </header>
 
+      <svg class="qd-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <clipPath id="qd-clip" clipPathUnits="objectBoundingBox"><circle cx=".5" cy=".5" r=".5"/></clipPath>
+          <marker id="qd-arrow-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0e5566"/></marker>
+          <marker id="qd-arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#12868f"/></marker>
+          <marker id="qd-arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d23a3a"/></marker>
+        </defs>
+      </svg>
       <div class="qr-cases__grid">
         <!-- 사례 1 -->
         <article class="qr-case">
           <h4 class="qr-case__title"><span>사례 1</span>치킨상점 QR고객이 자사 상점에서 주문</h4>
-          <ol class="qr-flow">
-            <li class="qr-node qr-node--partner"><img src="images/benefit-chicken.webp" alt="" loading="lazy"><b>치킨상점</b><small>모객파트너</small></li>
-            <li class="qr-step"><span>QR고객 모집</span></li>
-            <li class="qr-node"><img src="images/hero/office-worker.webp" alt="" loading="lazy"><b>QR고객</b></li>
-            <li class="qr-step qr-step--pay"><span>2만원 결제</span></li>
-            <li class="qr-node"><img src="images/benefit-chicken.webp" alt="" loading="lazy"><b>치킨상점</b><small>치킨 주문</small></li>
-          </ol>
-          <ul class="qr-money">
-            <li class="is-share"><span>치킨상점 → 온동네</span><b>고객공유수수료 2%</b><em>400원</em></li>
-            <li class="is-fee"><span>치킨상점 → 온동네</span><b>중개수수료 2%</b><em>400원</em></li>
-            <li class="is-share is-out"><span>온동네 → 치킨상점(모객파트너)</span><b>고객공유수수료 2% 정산</b><em>400원</em></li>
-            <li class="is-fee is-out"><span>온동네 → 치킨 로컬매니저</span><b>관리수수료 1%</b><em>200원</em></li>
-          </ul>
+          <svg class="qr-diagram" viewBox="0 0 480 412" role="img" aria-labelledby="qd1-t">
+            <title id="qd1-t">치킨상점이(가) 모집한 QR고객이 치킨상점에서 2만원 결제. 치킨상점은(는) 온동네에 고객공유수수료 2%와 중개수수료 2%를 내고, 온동네는 치킨상점에게 고객공유수수료 2%(400원)를, 로컬매니저에게 관리수수료 1%(200원)를 정산합니다.</title>
+            <line class="qd-ln" x1="100" y1="70" x2="200" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <text class="qd-lbl" x="150" y="56">QR고객 모집</text>
+            <line class="qd-ln" x1="278" y1="70" x2="378" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <rect class="qd-pay" x="282" y="56" width="92" height="28" rx="8"/>
+            <text class="qd-pay-t" x="328" y="75">2만원 결제</text>
+            <path class="qd-teal" d="M408 158 V200 H228 V286" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="318" y="192">고객공유수수료 2%</text>
+            <path class="qd-red" d="M428 158 V240 H252 V286" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="340" y="232">중개수수료 2%</text>
+            <path class="qd-teal qd-teal--bold" d="M203 325 H62 V160" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="134" y="315">고객공유수수료 2%</text>
+            <text class="qd-amt qd-amt--teal" x="134" y="346">정산 400원</text>
+            <line class="qd-red" x1="277" y1="325" x2="380" y2="325" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="328" y="315">관리수수료 1%</text>
+            <text class="qd-amt qd-amt--red" x="328" y="346">200원</text>
+            <image href="images/benefit-chicken.webp" x="28" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring qd-ring--partner" cx="62" cy="70" r="34"/>
+            <text class="qd-name" x="62" y="128">치킨상점</text>
+            <text class="qd-sub qd-sub--partner" x="62" y="146">(모객파트너)</text>
+            <image href="images/hero/office-worker.webp" x="206" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="240" cy="70" r="34"/>
+            <text class="qd-name" x="240" y="128">QR고객</text>
+            <image href="images/benefit-chicken.webp" x="384" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="70" r="34"/>
+            <text class="qd-name" x="418" y="128">치킨상점</text>
+            <text class="qd-sub" x="418" y="146">(치킨 주문)</text>
+            <rect class="qd-plat" x="205" y="290" width="70" height="70" rx="16"/>
+            <image href="images/logo-white.png" x="211" y="306" width="58" height="38" preserveAspectRatio="xMidYMid meet"/>
+            <text class="qd-name" x="240" y="386">온동네 플랫폼</text>
+            <image href="images/hero/manager.webp" x="384" y="291" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="325" r="34"/>
+            <text class="qd-name" x="418" y="386">로컬매니저</text>
+            <text class="qd-sub" x="418" y="404">(치킨 상점관리)</text>
+          </svg>
         </article>
 
         <!-- 사례 2 -->
         <article class="qr-case">
           <h4 class="qr-case__title"><span>사례 2</span>치킨상점 QR고객이 펜션 예약서비스 이용</h4>
-          <ol class="qr-flow">
-            <li class="qr-node qr-node--partner"><img src="images/benefit-chicken.webp" alt="" loading="lazy"><b>치킨상점</b><small>모객파트너</small></li>
-            <li class="qr-step"><span>QR고객 모집</span></li>
-            <li class="qr-node"><img src="images/hero/office-worker.webp" alt="" loading="lazy"><b>QR고객</b></li>
-            <li class="qr-step qr-step--pay"><span>20만원 결제</span></li>
-            <li class="qr-node"><img src="images/hero/lodging.webp" alt="" loading="lazy"><b>펜션상점</b><small>펜션 예약</small></li>
-          </ol>
-          <ul class="qr-money">
-            <li class="is-share"><span>펜션상점 → 온동네</span><b>고객공유수수료 2%</b><em>4,000원</em></li>
-            <li class="is-fee"><span>펜션상점 → 온동네</span><b>중개수수료 2%</b><em>4,000원</em></li>
-            <li class="is-share is-out"><span>온동네 → 치킨상점(모객파트너)</span><b>고객공유수수료 2% 정산</b><em>4,000원</em></li>
-            <li class="is-fee is-out"><span>온동네 → 숙박 로컬매니저</span><b>관리수수료 1%</b><em>2,000원</em></li>
-          </ul>
+          <svg class="qr-diagram" viewBox="0 0 480 412" role="img" aria-labelledby="qd2-t">
+            <title id="qd2-t">치킨상점이(가) 모집한 QR고객이 펜션상점에서 20만원 결제. 펜션상점은(는) 온동네에 고객공유수수료 2%와 중개수수료 2%를 내고, 온동네는 치킨상점에게 고객공유수수료 2%(4,000원)를, 로컬매니저에게 관리수수료 1%(2,000원)를 정산합니다.</title>
+            <line class="qd-ln" x1="100" y1="70" x2="200" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <text class="qd-lbl" x="150" y="56">QR고객 모집</text>
+            <line class="qd-ln" x1="278" y1="70" x2="378" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <rect class="qd-pay" x="282" y="56" width="92" height="28" rx="8"/>
+            <text class="qd-pay-t" x="328" y="75">20만원 결제</text>
+            <path class="qd-teal" d="M408 158 V200 H228 V286" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="318" y="192">고객공유수수료 2%</text>
+            <path class="qd-red" d="M428 158 V240 H252 V286" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="340" y="232">중개수수료 2%</text>
+            <path class="qd-teal qd-teal--bold" d="M203 325 H62 V160" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="134" y="315">고객공유수수료 2%</text>
+            <text class="qd-amt qd-amt--teal" x="134" y="346">정산 4,000원</text>
+            <line class="qd-red" x1="277" y1="325" x2="380" y2="325" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="328" y="315">관리수수료 1%</text>
+            <text class="qd-amt qd-amt--red" x="328" y="346">2,000원</text>
+            <image href="images/benefit-chicken.webp" x="28" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring qd-ring--partner" cx="62" cy="70" r="34"/>
+            <text class="qd-name" x="62" y="128">치킨상점</text>
+            <text class="qd-sub qd-sub--partner" x="62" y="146">(모객파트너)</text>
+            <image href="images/hero/office-worker.webp" x="206" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="240" cy="70" r="34"/>
+            <text class="qd-name" x="240" y="128">QR고객</text>
+            <image href="images/hero/lodging.webp" x="384" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="70" r="34"/>
+            <text class="qd-name" x="418" y="128">펜션상점</text>
+            <text class="qd-sub" x="418" y="146">(펜션 예약)</text>
+            <rect class="qd-plat" x="205" y="290" width="70" height="70" rx="16"/>
+            <image href="images/logo-white.png" x="211" y="306" width="58" height="38" preserveAspectRatio="xMidYMid meet"/>
+            <text class="qd-name" x="240" y="386">온동네 플랫폼</text>
+            <image href="images/hero/manager.webp" x="384" y="291" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="325" r="34"/>
+            <text class="qd-name" x="418" y="386">로컬매니저</text>
+            <text class="qd-sub" x="418" y="404">(펜션 상점관리)</text>
+          </svg>
         </article>
 
         <!-- 사례 3 -->
         <article class="qr-case">
           <h4 class="qr-case__title"><span>사례 3</span>로컬매니저 QR고객이 동네 마트에서 주문</h4>
-          <ol class="qr-flow">
-            <li class="qr-node qr-node--partner"><img src="images/hero/manager.webp" alt="" loading="lazy"><b>로컬매니저</b><small>모객파트너</small></li>
-            <li class="qr-step"><span>QR고객 모집</span></li>
-            <li class="qr-node"><img src="images/hero/office-worker.webp" alt="" loading="lazy"><b>QR고객</b></li>
-            <li class="qr-step qr-step--pay"><span>5만원 결제</span></li>
-            <li class="qr-node"><img src="images/hero/grocery.webp" alt="" loading="lazy"><b>마트상점</b><small>장보기 주문</small></li>
-          </ol>
-          <ul class="qr-money">
-            <li class="is-share"><span>마트상점 → 온동네</span><b>고객공유수수료 2%</b><em>1,000원</em></li>
-            <li class="is-fee"><span>마트상점 → 온동네</span><b>중개수수료 2%</b><em>1,000원</em></li>
-            <li class="is-share is-out"><span>온동네 → 로컬매니저(모객파트너)</span><b>고객공유수수료 2% 정산</b><em>1,000원</em></li>
-            <li class="is-fee is-out"><span>온동네 → 마트 로컬매니저</span><b>관리수수료 1%</b><em>500원</em></li>
-          </ul>
+          <svg class="qr-diagram" viewBox="0 0 480 412" role="img" aria-labelledby="qd3-t">
+            <title id="qd3-t">로컬매니저이(가) 모집한 QR고객이 마트상점에서 5만원 결제. 마트상점은(는) 온동네에 고객공유수수료 2%와 중개수수료 2%를 내고, 온동네는 로컬매니저에게 고객공유수수료 2%(1,000원)를, 로컬매니저에게 관리수수료 1%(500원)를 정산합니다.</title>
+            <line class="qd-ln" x1="100" y1="70" x2="200" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <text class="qd-lbl" x="150" y="56">QR고객 모집</text>
+            <line class="qd-ln" x1="278" y1="70" x2="378" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <rect class="qd-pay" x="282" y="56" width="92" height="28" rx="8"/>
+            <text class="qd-pay-t" x="328" y="75">5만원 결제</text>
+            <path class="qd-teal" d="M408 158 V200 H228 V286" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="318" y="192">고객공유수수료 2%</text>
+            <path class="qd-red" d="M428 158 V240 H252 V286" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="340" y="232">중개수수료 2%</text>
+            <path class="qd-teal qd-teal--bold" d="M203 325 H62 V160" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="134" y="315">고객공유수수료 2%</text>
+            <text class="qd-amt qd-amt--teal" x="134" y="346">정산 1,000원</text>
+            <line class="qd-red" x1="277" y1="325" x2="380" y2="325" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="328" y="315">관리수수료 1%</text>
+            <text class="qd-amt qd-amt--red" x="328" y="346">500원</text>
+            <image href="images/hero/manager.webp" x="28" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring qd-ring--partner" cx="62" cy="70" r="34"/>
+            <text class="qd-name" x="62" y="128">로컬매니저</text>
+            <text class="qd-sub qd-sub--partner" x="62" y="146">(모객파트너)</text>
+            <image href="images/hero/office-worker.webp" x="206" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="240" cy="70" r="34"/>
+            <text class="qd-name" x="240" y="128">QR고객</text>
+            <image href="images/hero/grocery.webp" x="384" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="70" r="34"/>
+            <text class="qd-name" x="418" y="128">마트상점</text>
+            <text class="qd-sub" x="418" y="146">(장보기 주문)</text>
+            <rect class="qd-plat" x="205" y="290" width="70" height="70" rx="16"/>
+            <image href="images/logo-white.png" x="211" y="306" width="58" height="38" preserveAspectRatio="xMidYMid meet"/>
+            <text class="qd-name" x="240" y="386">온동네 플랫폼</text>
+            <image href="images/hero/manager.webp" x="384" y="291" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="325" r="34"/>
+            <text class="qd-name" x="418" y="386">로컬매니저</text>
+            <text class="qd-sub" x="418" y="404">(마트 상점관리)</text>
+          </svg>
         </article>
 
         <!-- 사례 4 -->
         <article class="qr-case">
           <h4 class="qr-case__title"><span>사례 4</span>라이더 QR고객이 음식점에서 주문</h4>
-          <ol class="qr-flow">
-            <li class="qr-node qr-node--partner"><img src="images/hero/courier.webp" alt="" loading="lazy"><b>라이더</b><small>모객파트너</small></li>
-            <li class="qr-step"><span>QR고객 모집</span></li>
-            <li class="qr-node"><img src="images/hero/office-worker.webp" alt="" loading="lazy"><b>QR고객</b></li>
-            <li class="qr-step qr-step--pay"><span>3만원 결제</span></li>
-            <li class="qr-node"><img src="images/hero/restaurant.webp" alt="" loading="lazy"><b>음식점</b><small>음식 주문</small></li>
-          </ol>
-          <ul class="qr-money">
-            <li class="is-share"><span>음식점 → 온동네</span><b>고객공유수수료 2%</b><em>600원</em></li>
-            <li class="is-fee"><span>음식점 → 온동네</span><b>중개수수료 2%</b><em>600원</em></li>
-            <li class="is-share is-out"><span>온동네 → 라이더(모객파트너)</span><b>고객공유수수료 2% 정산</b><em>600원</em></li>
-            <li class="is-fee is-out"><span>온동네 → 음식점 로컬매니저</span><b>관리수수료 1%</b><em>300원</em></li>
-          </ul>
+          <svg class="qr-diagram" viewBox="0 0 480 412" role="img" aria-labelledby="qd4-t">
+            <title id="qd4-t">라이더이(가) 모집한 QR고객이 음식점에서 3만원 결제. 음식점은(는) 온동네에 고객공유수수료 2%와 중개수수료 2%를 내고, 온동네는 라이더에게 고객공유수수료 2%(600원)를, 로컬매니저에게 관리수수료 1%(300원)를 정산합니다.</title>
+            <line class="qd-ln" x1="100" y1="70" x2="200" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <text class="qd-lbl" x="150" y="56">QR고객 모집</text>
+            <line class="qd-ln" x1="278" y1="70" x2="378" y2="70" marker-end="url(#qd-arrow-navy)"/>
+            <rect class="qd-pay" x="282" y="56" width="92" height="28" rx="8"/>
+            <text class="qd-pay-t" x="328" y="75">3만원 결제</text>
+            <path class="qd-teal" d="M408 158 V200 H228 V286" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="318" y="192">고객공유수수료 2%</text>
+            <path class="qd-red" d="M428 158 V240 H252 V286" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="340" y="232">중개수수료 2%</text>
+            <path class="qd-teal qd-teal--bold" d="M203 325 H62 V160" marker-end="url(#qd-arrow-teal)"/>
+            <text class="qd-lbl qd-lbl--teal" x="134" y="315">고객공유수수료 2%</text>
+            <text class="qd-amt qd-amt--teal" x="134" y="346">정산 600원</text>
+            <line class="qd-red" x1="277" y1="325" x2="380" y2="325" marker-end="url(#qd-arrow-red)"/>
+            <text class="qd-lbl qd-lbl--red" x="328" y="315">관리수수료 1%</text>
+            <text class="qd-amt qd-amt--red" x="328" y="346">300원</text>
+            <image href="images/hero/courier.webp" x="28" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring qd-ring--partner" cx="62" cy="70" r="34"/>
+            <text class="qd-name" x="62" y="128">라이더</text>
+            <text class="qd-sub qd-sub--partner" x="62" y="146">(모객파트너)</text>
+            <image href="images/hero/office-worker.webp" x="206" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="240" cy="70" r="34"/>
+            <text class="qd-name" x="240" y="128">QR고객</text>
+            <image href="images/hero/restaurant.webp" x="384" y="36" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="70" r="34"/>
+            <text class="qd-name" x="418" y="128">음식점</text>
+            <text class="qd-sub" x="418" y="146">(음식 주문)</text>
+            <rect class="qd-plat" x="205" y="290" width="70" height="70" rx="16"/>
+            <image href="images/logo-white.png" x="211" y="306" width="58" height="38" preserveAspectRatio="xMidYMid meet"/>
+            <text class="qd-name" x="240" y="386">온동네 플랫폼</text>
+            <image href="images/hero/manager.webp" x="384" y="291" width="68" height="68" clip-path="url(#qd-clip)" preserveAspectRatio="xMidYMid slice"/>
+            <circle class="qd-ring" cx="418" cy="325" r="34"/>
+            <text class="qd-name" x="418" y="386">로컬매니저</text>
+            <text class="qd-sub" x="418" y="404">(음식점 상점관리)</text>
+          </svg>
         </article>
       </div>
 
