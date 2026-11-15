@@ -798,6 +798,19 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   border-color: #afcfc9;
 }
 .st__head { border-bottom: 1px solid var(--line); padding-bottom: 17px; margin-bottom: 20px; }
+/* 기존 → 대안 사이 전환 화살표 */
+.st-shift { display: flex; justify-content: center; margin: 18px 0; }
+.st-shift + .st--new { margin-top: 0; }
+.st-shift__arrow {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 10px;
+  width: min(100%, 440px); margin: 0;
+  padding: 20px 28px 52px;
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  background: linear-gradient(180deg, #965040 0%, #0c6b70 100%);
+  color: #fff; font-weight: 800; font-size: clamp(1rem, 2.4vw, 1.2rem); line-height: 1.35; text-align: center;
+}
+.st-shift__arrow b { font-size: 1.25em; line-height: 1; color: #ffe2a8; }
+
 .st__chip {
   display: inline-block;
   padding: 2px 10px;
