@@ -444,6 +444,22 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   .merchant-tools, .merchant-partners { grid-template-columns: 1fr; gap: 12px; margin-top: 16px; }
 }
 
+/* ===== 제휴문의 아래 카톡상담 · 전화문의 ===== */
+.contact-quick { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 18px; }
+.contact-quick__btn { display: inline-flex; align-items: center; gap: 10px; min-width: 190px; padding: 10px 20px 10px 12px; border: 2px solid; border-radius: 999px; background: #fff; color: var(--navy); text-decoration: none; box-shadow: 0 4px 14px rgba(11, 61, 74, .08); transition: transform .15s, box-shadow .15s; }
+.contact-quick__btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11, 61, 74, .14); }
+.contact-quick__btn--kakao { border-color: #fee500; }
+.contact-quick__btn--tel { border-color: var(--brand); }
+.contact-quick__icon { display: grid; place-items: center; width: 36px; height: 36px; flex: none; border-radius: 50%; }
+.contact-quick__btn--kakao .contact-quick__icon { background: #fee500; color: #3a1d1d; }
+.contact-quick__btn--tel .contact-quick__icon { background: var(--brand); color: #fff; }
+.contact-quick__icon svg { width: 20px; height: 20px; }
+.contact-quick__btn > span:last-child { display: grid; font-size: 1rem; font-weight: 800; line-height: 1.2; text-align: left; }
+.contact-quick__btn small { color: var(--mute); font-size: .72rem; font-weight: 600; }
+@media (max-width: 600px) {
+  .contact-quick { display: grid; grid-template-columns: 1fr; width: min(100%, 320px); margin-inline: auto; }
+}
+
 /* ===== 고객앱 다운받기 ===== */
 .app-get { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: 28px; padding: clamp(18px, 2.6vw, 26px) clamp(18px, 3vw, 34px); border-radius: 20px; background: var(--navy); color: #fff; }
 .app-get__title { display: grid; gap: 4px; margin: 0; }
