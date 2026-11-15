@@ -444,6 +444,23 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   .merchant-tools, .merchant-partners { grid-template-columns: 1fr; gap: 12px; margin-top: 16px; }
 }
 
+/* ===== 고객앱 다운받기 ===== */
+.app-get { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: 28px; padding: clamp(18px, 2.6vw, 26px) clamp(18px, 3vw, 34px); border-radius: 20px; background: var(--navy); color: #fff; }
+.app-get__title { display: grid; gap: 4px; margin: 0; }
+.app-get__title strong { font-size: clamp(1.15rem, 2.2vw, 1.45rem); font-weight: 900; }
+.app-get__title span { font-size: .92rem; opacity: .85; }
+.app-get__btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.app-get__btn { display: inline-flex; align-items: center; gap: 10px; min-width: 176px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.35); border-radius: 12px; background: #000; color: #fff; text-decoration: none; transition: transform .15s, background .15s; }
+.app-get__btn:hover { background: #1b1b1b; transform: translateY(-2px); }
+.app-get__btn svg { width: 26px; height: 26px; flex: none; }
+.app-get__btn span { display: grid; font-size: 1.12rem; font-weight: 700; line-height: 1.15; }
+.app-get__btn small { font-size: .66rem; font-weight: 500; letter-spacing: .02em; }
+@media (max-width: 600px) {
+  .app-get { flex-direction: column; align-items: stretch; text-align: center; }
+  .app-get__btns { justify-content: center; }
+  .app-get__btn { flex: 1 1 150px; justify-content: center; min-width: 0; }
+}
+
 /* ===== QR 고객공유수수료 정산 사례 ===== */
 .qr-cases { margin-top: 48px; }
 .qr-cases__head { text-align: center; margin-bottom: 22px; }
@@ -941,7 +958,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .trade-apps li { display: grid; justify-items: center; align-content: start; gap: 3px; font-size: .72rem; font-weight: 700; }
 .trade-apps img { width: 39px; height: 39px; border-radius: 9px; box-shadow: 0 1px 3px #233c401c; }
 .trade-broker__caption {
-  position: relative; display: grid; justify-items: center; gap: 7px; margin-top: -26px;
+  position: relative; display: grid; justify-items: center; gap: 7px; margin-top: 12px;
 }
 .trade-broker__stamp {
   display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
@@ -951,7 +968,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 }
 .trade-broker__stamp span { font: 700 1.5rem/1 Arial, sans-serif; }
 .trade-broker__caption > span { color: var(--body); font-size: .8rem; font-weight: 600; }
-.trade-broker__issues { margin-top: 4px; padding: 9px 16px 10px; border-radius: 10px; background: #faf2ed; text-align: left; }
+.trade-broker__issues { margin-top: 0; padding: 9px 16px 10px; border-radius: 10px; background: #faf2ed; text-align: left; }
 .trade-broker__issues b { display: block; margin-bottom: 4px; color: #a3312b; font-size: .88rem; font-weight: 800; text-align: center; }
 .trade-broker__issues ol { margin: 0; padding: 0; list-style: none; counter-reset: issue; }
 .trade-broker__issues li { counter-increment: issue; color: var(--navy); font-size: .82rem; font-weight: 700; line-height: 1.6; white-space: nowrap; }
